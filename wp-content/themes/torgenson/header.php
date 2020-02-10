@@ -51,7 +51,31 @@
 	
 	<header>
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_left">
+			
+			<a href="">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/torgenson-logo.svg"/>
+				
+			</a>
+			
+		</div><!-- header_left -->
+		
+		<div class="header_right">
+			
+			<nav><?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?></nav>
+			
+			<div class="free_consultation">
+				
+				<span class="free_consult_title">Free Consultation</span><!-- free_consult_title -->
+				
+				<a class="phone" href="tel:6023625633">(602) 362-5633</a>
+				
+			</div><!-- free_consultation -->
+			
+		</div><!-- header_right -->
+		
+		
 		
 	</header>
 				

@@ -1,0 +1,55 @@
+
+header {
+	width:100%;
+	height:126px;
+	background: #fff;
+	padding:0 35px;
+	box-shadow: 0px 1px 14.85px 0.15px rgba(6, 23, 29, 0.2);
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_left {
+	padding-top:8px;
+}
+
+
+.header_right {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow:1;
+}
+
+nav {
+	flex-grow:1;
+	ul {
+		
+	}
+	ul.menu {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+
+.free_consultation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 25px;
+	span.free_consult_title {
+		color:$bluedark;
+		font-size: 21px;
+		letter-spacing: 0.025em;
+		@include rufina_bold;
+	}
+	a.phone {
+		color:$red;
+		font-size: 40px;
+		text-decoration: none;
+		margin-top:4px;
+		@include sans_black;
+	}
+}
+
+
