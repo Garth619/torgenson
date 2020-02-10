@@ -20,6 +20,20 @@ $themePath: '/wp-content/themes/torgenson/';
 	font-style: normal;
 }
 
+@mixin sans_semibold {
+  font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@mixin sans_bold {
+  font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
 
 @mixin sans_black {
   font-family: 'Source Sans Pro', sans-serif;

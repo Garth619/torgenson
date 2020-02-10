@@ -34,7 +34,7 @@
 
 <?php the_field( 'review_css','option'); ?>
 
-@import url('https://fonts.googleapis.com/css?family=Rufina:700|Source+Sans+Pro:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rufina:700|Source+Sans+Pro:400,600,700,900&display=swap');
 
 </style>
 
