@@ -1,15 +1,38 @@
-$themePath: '/wp-content/themes/starter/';
+$themePath: '/wp-content/themes/torgenson/';
 
 
+// fonts
 
 
-/*
-@mixin quatro_reg {
-  font-family: quatro, sans-serif;
+@mixin rufina_bold {
+  font-family: 'Rufina', serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+// San Source Pro
+
+
+@mixin sans_reg {
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-@include quatro_reg;
 
-*/
+@mixin sans_black {
+  font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+// Color
+
+
+$offwhite: #f4f4f4;
+$bluedark: #06171d;
+$bluelight: #06171d;
+$red: #be2623;
+$redlight: #fe322e;
