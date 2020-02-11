@@ -332,6 +332,12 @@ nav.nav_desktop {
 				font-size: 18px;
 				padding-bottom:25px;
 				@include sans_semibold;
+				> a.open {
+						color:$red;
+						&:after {
+							border-top: 5px solid $red;
+						}
+				}
 			}
 			> li.menu-item-has-children {
 					> a {

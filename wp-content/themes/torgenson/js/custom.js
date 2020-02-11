@@ -402,6 +402,8 @@ var pgurl = window.location.href;
 
 	function tabletClick() {
 		
+		$(this).toggleClass('open');
+		
 		$(this).next('ul.sub-menu').toggleClass('open');
 		
 	}

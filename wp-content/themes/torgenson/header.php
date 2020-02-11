@@ -53,7 +53,7 @@
 		
 		<div class="header_left">
 			
-			<a href="">
+			<a href="<?php bloginfo('url');?>">
 				
 				<img src="<?php bloginfo('template_directory');?>/images/torgenson-logo.svg"/>
 				
