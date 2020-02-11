@@ -44,7 +44,53 @@
 					
 					<div class="sec_one_testi_wrapper sec_one_right_box">
 						
+						<div class="sec_one_testi_slider">
+							
+							<div class="sec_one_testi_slide">
+								
+								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
+								
+								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
+								
+								<span class="description">“I received more than 10x what was initially offered me by the other party’s insurance agency and they were incredibly kind and professional.”</span>
+								
+								<span class="name">emma d.</span>
+								
+								<span class="client">Personal Injury Client</span>
+								
+							</div><!-- sec_one_testi_slide -->
+							
+						</div><!-- sec_one_testi_slider -->
 						
+						<div class="test_arrows">
+							
+							<div class="test_arrow_left test_arrow">
+								
+								<div class="arrow">
+									
+									<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+								
+								</div><!-- arrow -->
+								
+								<span class="arrow_circle"></span><!-- arrow_circle -->
+								
+							</div><!-- test_arrow_left -->
+							
+							<div class="test_arrow_right test_arrow">
+								
+								<div class="arrow">
+									
+									<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+								
+								</div><!-- arrow -->
+								
+								<span class="arrow_circle"></span><!-- arrow_circle -->
+								
+							</div><!-- test_arrow_right -->
+							
+							<div class="test_arrow_right"></div><!-- test_arrow_right -->
+							
+						</div><!-- test_arrows -->
 						
 					</div><!-- sec_one_testi_wrapper -->
 					
