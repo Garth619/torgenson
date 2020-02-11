@@ -60,6 +60,34 @@
 								
 							</div><!-- sec_one_testi_slide -->
 							
+								<div class="sec_one_testi_slide">
+								
+								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
+								
+								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
+								
+								<span class="description">“ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</span>
+								
+								<span class="name">Name</span>
+								
+								<span class="client">Personal Injury Client</span>
+								
+							</div><!-- sec_one_testi_slide -->
+							
+								<div class="sec_one_testi_slide">
+								
+								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
+								
+								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
+								
+								<span class="description">“I received more than 10x what was initially offered me by the other party’s insurance agency and they were incredibly kind and professional.”</span>
+								
+								<span class="name">Name.</span>
+								
+								<span class="client">Personal Injury Client</span>
+								
+							</div><!-- sec_one_testi_slide -->
+							
 						</div><!-- sec_one_testi_slider -->
 						
 						<div class="test_arrows">
@@ -107,8 +135,19 @@
 		</picture>
 		
 	</div><!-- sec_one_top -->
-		
+	
 	<div class="sec_one_bottom">
+		
+		<div class="sec_one_sp">
+			
+			<ul>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+			</ul>
+			
+		</div><!-- sec_one_sp -->
 		
 		<div class="sec_one_bottom_inner">
 			

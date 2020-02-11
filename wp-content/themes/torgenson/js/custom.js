@@ -303,6 +303,19 @@ $('.sec_three_slider').slick({
  });
  
 */
+
+
+
+$('.sec_one_testi_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:true,
+	fade:true,
+	prevArrow:".test_arrow_left",
+	nextArrow:".test_arrow_right"
+ });
+
  
  
  
@@ -455,7 +468,56 @@ var pgurl = window.location.href;
 
 
 
+	// section one magic line
+	
+	
+if($('.sec_one_sp').length >0 ){// just show on homepage class 'nav'
+  
+  	$(function() {
 
+        var $el, leftPos, newWidth,
+            $mainNav = $('.sec_one_sp').find("ul");
+
+        $mainNav.append("<li id='magic-line'></li>");
+        var $magicLine = $("#magic-line");
+
+
+
+        if($('.sec_one_sp ul > li').hasClass('active')) {
+            $magicLine
+                .css({
+                    "left": $('.sec_one_sp').find("ul > li.active").position().left,
+                    "width": $('.sec_one_sp ul > li.active a').width()
+                }).data("origLeft", $magicLine.position().left);
+        } else {
+            $magicLine
+                .css({
+                    "left": 0,
+                    "width": $('.sec_one_sp ul > li:first a').width()
+                }).data("origLeft", $magicLine.position().left);
+        }
+
+
+
+
+        $('.sec_one_sp').find("ul > li:not(#magic-line)").hover(function() {
+            $el = $(this);
+            leftPos = $el.position().left;
+            newWidth = $el.children().width();
+            $magicLine.stop().animate({
+                left: leftPos,
+                width: newWidth
+            });
+        }, function() {
+            $magicLine.stop().animate({
+                left: $magicLine.data("origLeft"),
+                width: $('.sec_one_sp ul > li.active a').width()
+            });
+        });
+ });
+    
+    
+}
 
 
   
