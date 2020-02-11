@@ -63,7 +63,13 @@
 		
 		<div class="header_right">
 			
-			<nav class="nav_desktop"><?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?></nav>
+			<nav class="nav_desktop">
+				
+				<div class="close"></div><!-- close -->
+				
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+			
+			</nav>
 			
 			<div class="free_consultation">
 				
