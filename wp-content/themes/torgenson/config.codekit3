@@ -446,7 +446,7 @@
 		},
 	"/images/video-image-mobile.jpg": {
 		"ft": 16384,
-		"iS": 14492,
+		"iS": 21144,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/video-image-mobile.jpg",
@@ -457,7 +457,7 @@
 		},
 	"/images/video-image-tablet.jpg": {
 		"ft": 16384,
-		"iS": 23400,
+		"iS": 34649,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/video-image-tablet.jpg",
@@ -468,10 +468,21 @@
 		},
 	"/images/video-image.jpg": {
 		"ft": 16384,
-		"iS": 26895,
+		"iS": 40129,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/video-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/video-image2.jpg": {
+		"ft": 16384,
+		"iS": 103951,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/video-image2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

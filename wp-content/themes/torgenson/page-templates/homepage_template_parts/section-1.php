@@ -20,7 +20,35 @@
 					
 				</div><!-- sec_one_top_row_left -->
 				
-				<div class="sec_one_top_row_right"></div><!-- sec_one_top_row_right -->
+				<div class="sec_one_top_row_right">
+					
+					<div class="sec_one_video_wrapper sec_one_right_box">
+						
+						<div class="sec_one_video_inner">
+							
+							<img src="<?php bloginfo('template_directory');?>/images/video-image.jpg"/>
+							
+							<div class="sec_one_video_overlay">
+								
+								<div class="play_button">
+									
+									<span></span>
+									
+								</div><!-- play_button -->
+								
+							</div><!-- sec_one_video_overlay -->
+							
+						</div><!-- sec_one_video_inner -->
+						
+					</div><!-- sec_one_video_wrapper -->
+					
+					<div class="sec_one_testi_wrapper sec_one_right_box">
+						
+						
+						
+					</div><!-- sec_one_testi_wrapper -->
+					
+				</div><!-- sec_one_top_row_right -->
 				
 			</div><!-- sec_one_top_row -->
 			
