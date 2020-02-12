@@ -10,7 +10,7 @@
 					
 					<span class="sec_one_subheader">phoenix personal injury attorneys</span><!-- sec_one_subheader -->
 					
-					<span class="sec_one_largeheader">100% dedicated to helping good people who are hurt.</span><!-- sec_one_largeheader -->
+					<span class="sec_one_largeheader">100% dedicated to helping good people who are&nbsp;hurt.</span><!-- sec_one_largeheader -->
 					
 					<a class="request_button" href="#consultation">
 						
