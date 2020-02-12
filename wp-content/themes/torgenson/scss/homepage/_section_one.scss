@@ -6,8 +6,9 @@
 
 .sec_one_top {
 	position: relative;
-	min-height:1199px;
-	
+	z-index:1;
+	height:1070px;
+	overflow: hidden;
 }
 
 
@@ -48,7 +49,7 @@
 
 img.hero {
 	width:100%;
-	height:100%;
+	height:1199px;
 	position: absolute;
 	top:0;
 	left:0;
@@ -56,11 +57,7 @@ img.hero {
 }
 
 
-.sec_one_bottom {
-	width:100%;
-	height:500px;
-	background: $bluedark;
-}
+
 
 a.request_button {
 	width:395px;
@@ -313,13 +310,31 @@ a.request_button {
 }
 
 
+.sec_one_bottom {
+	width:100%;
+	padding:1px 0 0 0;
+	height:5000px;
+	background: pink;
+	position: relative;
+	//z-index:1;
+	margin-top:-140px;
+	overflow: hidden;
+}
+
+
+
 .sec_one_sp {
 	width:100%;
-	
-	background:$red;
 	max-width: 1555px;
-	margin:0 auto;
-
+	margin:145px auto 0;
+	position: relative;
+	z-index:1;
+	&:after {
+		content:"";
+		margin-top:57px;
+		display: block;
+		border-bottom:1px solid #3e4a4f;
+	}
 	ul {
 		list-style: none;
 		
@@ -328,30 +343,94 @@ a.request_button {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
+		
+		
 		#magic-line {
      position: absolute;
-              bottom: 0;
-              left: 0;
-              z-index:1;
-              padding: 0;
-              width: 25%;
-              height: 4px;
-              background: yellow;
-            }
+     bottom: -59px;
+     left: 0;
+     z-index:1;
+     padding: 0;
+     width: 25%;
+     height: 4px;
+     border:none;
+     background: $redlight;
+     }
 		> li {
-			background: pink;
-			height:400px;
-				flex-basis:25%;
-				a {
-					display: block;
+				&:nth-of-type(1) {
+					//flex-basis:17%;
+					//margin-right:20px;
+					a {
+						span.description {
+							max-width:230px;
+						}
+					}
 				}
+				&:nth-of-type(2) {
+					a {
+						span.description {
+							max-width:250px;
+						}
+					}
+				}
+				&:nth-of-type(3) {
+					a {
+						span.description {
+							max-width:270px;
+						}
+					}
+				}
+				&:nth-of-type(4) {
+					//margin-right:18px;
+					a {
+						span.description {
+							max-width:260px;
+						}
+					}
+				}
+				&:hover {
+					a {
+						span.roman_num {
+							color:$redlight;
+						}
+					}
+				}
+				a {
+					display: flex;
+					span.roman_num {
+						font-size: 30px;
+						color:#fff;
+						margin-right:13px;
+						transition: all 300ms ease-in-out;
+						@include rufina_bold;
+					}
+					span.description {
+						color:#fff;
+						font-size: 19px;
+						line-height: 28px;
+						@include sans_reg;
+					}
+				}
+			}
 		}
 	}
 
-}
 
 
 
+	img.hero_bottom {
+		position: fixed;
+		top: 0px;
+		left:0;
+	}
+	
+	
+	img.phoenix_cutout {
+		position: absolute;
+		top:50px;
+		right:0;
+		width:1000px;
+	}
 
 
 

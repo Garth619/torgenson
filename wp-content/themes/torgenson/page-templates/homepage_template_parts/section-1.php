@@ -128,6 +128,37 @@
 			
 		</div><!-- sec_one_top_inner -->
 		
+		<div class="sec_one_sp">
+			
+			<ul>
+				<li class="active">
+					<a>
+						<span class="roman_num">I.</span>
+						<span class="description">99% success in our cases , recovered millions of dollars for our injured clients</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<span class="roman_num">II.</span>
+						<span class="description">Our clients are treated with  integrity, respect, honesty and an unwavering loyalty.</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<span class="roman_num">III.</span>
+						<span class="description">There is no charge unless we  win; a case will never be delayed by our actions or failure to act.</span>
+					</a>
+				</li>
+				<li>
+					<a>
+						<span class="roman_num">IV.</span>
+						<span class="description">We will come to you (home or hospital) immediately to make sure you are protected.</span>
+					</a>
+				</li>
+			</ul>
+			
+		</div><!-- sec_one_sp -->
+		
 		<picture>
 		
 			<img class="hero" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
@@ -136,24 +167,21 @@
 		
 	</div><!-- sec_one_top -->
 	
+	
+	
 	<div class="sec_one_bottom">
 		
-		<div class="sec_one_sp">
-			
-			<ul>
-				<li><a></a></li>
-				<li><a></a></li>
-				<li><a></a></li>
-				<li><a></a></li>
-			</ul>
-			
-		</div><!-- sec_one_sp -->
+		
 		
 		<div class="sec_one_bottom_inner">
 			
 			
 			
 		</div><!-- sec_one_bottom_inner -->
+		
+		<img class="hero_bottom" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
+		
+		<img class="phoenix_cutout" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
 		
 	</div><!-- sec_one_bottom -->
 	
