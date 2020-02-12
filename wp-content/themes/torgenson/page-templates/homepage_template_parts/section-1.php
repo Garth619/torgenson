@@ -36,6 +36,12 @@
 									
 								</div><!-- play_button -->
 								
+								<div class="video_cap_wrapper">
+								
+									<span class="video_cap">learn how we can<br/> help you in 90 seconds</span><!-- video_ca -->
+								
+								</div><!-- video_cap_wrapper -->
+								
 							</div><!-- sec_one_video_overlay -->
 							
 						</div><!-- sec_one_video_inner -->
@@ -129,6 +135,8 @@
 		</div><!-- sec_one_top_inner -->
 		
 		<div class="sec_one_sp">
+			
+			<span class="why_choose">Why Choose Us?</span><!-- why_choose -->
 			
 			<ul>
 				<li class="active">
