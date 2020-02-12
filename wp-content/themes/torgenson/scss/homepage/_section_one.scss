@@ -607,3 +607,158 @@ a.request_button {
 	
 } /* Media Query */
 
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	.sec_one_top_row {
+		padding: 0 41px;
+	}
+	
+	.sec_one_top {
+    height: 917px;
+	}
+	
+	
+	.sec_one_top_inner {
+		padding: 127px 0 0 0;
+	}
+	
+	
+	a.request_button {
+		margin-top: 31px;
+		span {
+			font-size: 17px;
+			padding: 21px 0;
+		}
+	}
+	
+	
+	.sec_one_top_row_left {
+		padding-top:13px;
+		padding-right: 10px;
+		span.sec_one_subheader {
+			font-size: 16px;
+		}
+		span.sec_one_largeheader {
+			font-size: 53px;
+			line-height: 60px;
+		}
+	}
+	
+	
+	.sec_one_top_row_right {
+    width: 592px;
+  }
+	
+	.sec_one_right_box {
+		height:351px;
+	}
+	
+	
+	.sec_one_video_wrapper {
+		.sec_one_video_inner {
+			.sec_one_video_overlay {
+				.play_button {
+					width:138px;
+					height:138px;
+					border: 13px solid rgba(255,255,255,0.15);
+					span {
+						height:72px;
+						width:72px;
+						&:before {
+							border-top: 10px solid transparent;
+							border-bottom: 10px solid transparent;
+							border-left: 12px solid #be2623;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.sec_one_testi_wrapper {
+		padding-top: 24px;
+	}
+	
+	
+	.sec_one_testi_slide {
+		span.description {
+			font-size: 16px;
+			line-height: 25px;
+			margin: 20px auto 0;
+			&:after {
+				margin: 12px auto 0;
+			}
+		}
+		span.client {
+			margin-top: 7px;
+		}
+	}
+	
+	.test_arrows {
+  	margin: 49px auto 0;
+  }
+  
+  .sec_one_sp {
+    margin: 146px auto 0;
+    &:after {
+	  	margin-top: 48px;
+    }
+    ul {
+	    #magic-line {
+		    bottom: -51px;
+	    }
+	    > li {
+		    flex-basis:25%;
+		    	&:nth-of-type(1) {
+			    	a {
+				    	span.description {
+					   	 max-width: 200px;
+				    	}
+				   	}
+		    	}
+		    	&:nth-of-type(2) {
+			    	a {
+				    	span.description {
+					   	 max-width: 195px;
+				    	}
+				   	}
+		    	}
+		    	&:nth-of-type(3) {
+			    	a {
+				    	span.description {
+					   	 max-width: 190px;
+				    	}
+				   	}
+		    	}
+		    	&:nth-of-type(4) {
+			    	a {
+				    	span.description {
+					   	 max-width: 196px;
+				    	}
+				   	}
+		    	}
+		    	a {
+			    	span.roman_num {
+				    	font-size: 25px;
+							margin-right: 17px;
+			    	}
+						span.description {
+				    	font-size: 16px;
+							line-height: 22px;
+			    	}
+		    	}
+	    	}
+    	}
+		}
+		
+		
+		img.hero {
+			height: 950px;
+			object-position:21% 0%;
+		}
+	
+	
+} /* Media Query */
