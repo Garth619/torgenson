@@ -167,21 +167,24 @@
 		
 	</div><!-- sec_one_top -->
 	
-	
-	
 	<div class="sec_one_bottom">
-		
-		
-		
-		<div class="sec_one_bottom_inner">
-			
-			
-			
-		</div><!-- sec_one_bottom_inner -->
 		
 		<img class="hero_bottom" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
 		
-		<img class="phoenix_cutout" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
+		<div class="phoenix_cutout">
+			
+			<div class="pheonix_spacer pheonix_spacer_one"></div><!-- pheonix_spacer -->
+			
+			<img class="phoenix_cutout_img" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
+			
+			<div class="pheonix_spacer pheonix_spacer_two"></div><!-- pheonix_spacer -->
+			
+		</div><!-- phoenix_cutout -->
+		
+		<div class="sec_bottom_bg">
+			 
+			
+		</div><!-- sec_bottom_bg -->
 		
 	</div><!-- sec_one_bottom -->
 	
