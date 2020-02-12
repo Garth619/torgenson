@@ -933,10 +933,13 @@ a.request_button {
 	  margin: 110px auto 0;
 	  max-width:771px;
 	  padding:0 48px;
+	  &:after {
+			margin-top: 13px;
+	  }
 	  span.why_choose {
 		  display: block;
 		  text-align: center;
-		  border-bottom:4px solid $redlight;
+		  border-bottom:4px solid $red;
 		  color: #fff;
 		  font-size: 19px;
 		  letter-spacing: 0.1em;
@@ -947,15 +950,50 @@ a.request_button {
 	  ul {
 		  flex-wrap:wrap;
 		  margin-top: 45px;
+		  padding:0 5px;
 		  > li {
-			  	flex-basis:50%;
-			  	a {
+			  	flex-basis:45%;
+			  	margin-bottom: 47px;
+			  	&:nth-of-type(1) {
+				  	a {
+					  	span.description {
+						  	max-width: 280px;
+					  	}
+					  }
+				  }
+				  &:nth-of-type(2) {
+				  	a {
+					  	span.description {
+						  	max-width: 275px;
+					  	}
+					  }
+				  }
+				  &:nth-of-type(3) {
+				  	a {
+					  	span.description {
+						  	max-width: 270px;
+					  	}
+					  }
+				  }
+				  &:nth-of-type(4) {
+				  	a {
+					  	span.description {
+						  	max-width: 295px;
+					  	}
+					  }
+				  }
+					a {
+						position: relative;
 				  	span.roman_num {
 					  	margin-top: 6px;
+					  	position: absolute;
+					  	top:0;
+					  	left:0;
 				  	}
 				  	span.description {
 					  	font-size: 19px;
 					  	line-height: 28px;
+					  	padding-left:45px;
 				  	}
 			  }
 		  }
