@@ -352,7 +352,7 @@ a.request_button {
      width: 25%;
      height: 4px;
      border:none;
-     background: $redlight;
+     background: $red;
      }
 		> li {
 				&:nth-of-type(1) {
@@ -454,10 +454,65 @@ a.request_button {
 		position: relative;
 		z-index:1;
 		top: 741px;
-		//margin-top: 740px;
 		color:#fff;
-		min-height:300px;
+		padding-top:1px;
 	}
+	
+	
+	.sec_bottom_inner {
+		max-width:1355px;
+		margin: -568px auto 0;
+	}
+	
+	.sec_bottom_left {
+		max-width:745px;
+		padding-bottom:180px;
+		h1.sec_one_h1 {
+			font-size: 75px;
+			line-height: 75px;
+			@include rufina_bold;
+			&:after {
+				content:"";
+				display: block;
+				width:214px;
+				height:4px;
+				background: $red;
+				margin-top:72px;
+				margin-bottom:47px;
+			}
+		}
+	}
+	
+	
+	.sec_bottom_left.content {
+		.sec_one_intro {
+			color:#fff;
+			font-size: 23px;
+			line-height: 40px;
+			@include rufina_bold;
+			p {
+				margin-bottom:30px;
+			}
+		}
+		.sec_one_left_content {
+			padding:10px 0 0 0;
+			font-size: 19px;
+			line-height: 40px;
+			@include sans_reg;
+			p {
+				margin-bottom:23px;
+			}
+			a {
+				color:$red;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	
 
 
 @media screen and (min-width: 1920px) {

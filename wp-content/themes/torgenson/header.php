@@ -51,6 +51,8 @@
 	
 	<header>
 		
+		<div class="header_inner">
+		
 		<div class="header_left">
 			
 			<a href="<?php bloginfo('url');?>">
@@ -86,6 +88,8 @@
 			<span></span>
 			<span></span>
 		</div><!-- mobile_menu -->
+		
+		</div><!-- header_inner -->
 		
 	</header>
 				

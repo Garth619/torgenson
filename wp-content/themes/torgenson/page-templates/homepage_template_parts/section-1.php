@@ -183,6 +183,27 @@
 		
 		<div class="sec_bottom_bg">
 			 
+			 <div class="sec_bottom_inner">
+				 
+				 <div class="sec_bottom_left content">
+					 
+					 <h1 class="sec_one_h1">Phoenix Personal Injury Attorneys</h1><!-- sec_one_h1 -->
+					 
+					 <div class="sec_one_intro">
+						 
+						 <p>Our team of Phoenix personal injury lawyers will not stop fighting until we uncover every single detail that we need to know. Our investigative process is deeply thorough and effective, and we keep you included in every step of the process so you’re never in the dark.</p>
+						 
+					 </div><!-- sec_one_intro -->
+					 
+					 <div class="sec_one_left_content">
+						 
+						 <p>You can trust us to be completely honest with you and to continue defending your rights until the case has been closed. Because our only focus is personal injury law, we have a deep understanding of insurance law, medical care, medical bill payments, and case resolution. We use this knowledge to successfully fight for our clients, and we’ve done it many times before.</p>
+						 
+					 </div><!-- sec_one_left_content -->
+					 
+					</div><!-- sec_bottom_left -->
+				 
+				</div><!-- sec_bottom_inner -->
 			
 		</div><!-- sec_bottom_bg -->
 		

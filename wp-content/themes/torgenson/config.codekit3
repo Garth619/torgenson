@@ -286,6 +286,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/favicon.png": {
+		"ft": 32768,
+		"iS": 9993,
+		"oA": 0,
+		"oAP": "/images/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/favicon2-01.png": {
+		"ft": 32768,
+		"iS": 11285,
+		"oA": 0,
+		"oAP": "/images/favicon2-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/hero-desktop.jpg": {
 		"ft": 16384,
 		"iS": 170898,
