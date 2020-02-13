@@ -144,7 +144,7 @@
 			
 			<span class="why_choose">Why Choose Us?</span><!-- why_choose -->
 			
-			<ul>
+			<ul class="sp_slider">
 				<li class="active">
 					<a>
 						<span class="roman_num">I.</span>
@@ -170,6 +170,44 @@
 					</a>
 				</li>
 			</ul>
+			
+			<div class="sp_arrows">
+				
+				<div class="sp_arrow_left sp_arrow">
+					
+					<div class="sp_arrow_inner">
+								
+						<div class="arrow">
+									
+							<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+								
+						</div><!-- arrow -->
+								
+						<span class="arrow_circle"></span><!-- arrow_circle -->
+					
+					</div><!-- sp_arrow_inner -->
+								
+				</div><!-- sp_arrow_left -->
+							
+				<div class="sp_arrow_right sp_arrow">
+					
+					<div class="sp_arrow_inner">
+								
+						<div class="arrow">
+									
+							<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+								
+						</div><!-- arrow -->
+								
+						<span class="arrow_circle"></span><!-- arrow_circle -->
+					
+					</div><!-- sp_arrow_inner -->
+								
+				</div><!-- sp_arrow_right -->
+							
+				<div class="sp_arrow_right"></div><!-- sp_arrow_right -->
+				
+			</div><!-- sp_arrows -->
 			
 		</div><!-- sec_one_sp -->
 		

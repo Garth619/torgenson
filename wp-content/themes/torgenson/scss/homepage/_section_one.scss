@@ -377,7 +377,7 @@ a.request_button {
      border:none;
      background: $red;
      }
-		> li {
+		 li {
 				&:nth-of-type(1) {
 					//flex-basis:17%;
 					//margin-right:20px;
@@ -537,7 +537,9 @@ a.request_button {
 	}
 	
 	
-
+.sp_arrows {
+	display: none;
+}
 
 @media screen and (min-width: 1921px) {
 	
@@ -745,7 +747,7 @@ a.request_button {
 	    #magic-line {
 		    bottom: -51px;
 	    }
-	    > li {
+	     li {
 		    flex-basis:25%;
 		    	&:nth-of-type(1) {
 			    	a {
@@ -960,13 +962,14 @@ a.request_button {
 		  flex-wrap:wrap;
 		  margin-top: 45px;
 		  padding:0 5px;
-		  > li {
+		   li {
 			  	flex-basis:45%;
 			  	margin-bottom: 47px;
 			  	&:hover {
 				  	a {
 					  	span.roman_num {
 						  	color:#fff;
+						  	
 					  	}
 				  	}
 			  	}
@@ -1005,6 +1008,7 @@ a.request_button {
 					  	position: absolute;
 					  	top:0;
 					  	left:0;
+					  	margin-right:0;
 				  	}
 				  	span.description {
 					  	font-size: 19px;
@@ -1086,6 +1090,23 @@ a.request_button {
     margin: -344px auto 0;
    }
   
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 755px) {
+	
+	
+	
+	
+	.sec_one_top_row_left {
+		span.sec_one_largeheader {
+			max-width: 600px;
+		}
+	}
+	
+	  
+	
 	
 } /* Media Query */
 
@@ -1174,9 +1195,199 @@ a.request_button {
 		display: none;
 	}
 	
+	
+	
 	.sec_one_sp {
     margin: 30px auto 0;
+		span.why_choose {
+			max-width:316px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+    &:after {
+	    display: none;
+    }
+    ul {
+	    display: block;
+	    margin-top: 14px;
+	    li {
+		    margin-bottom: 0;
+		    a {
+			    display: block;
+			    text-align: center;
+			    span {
+				    display: block;
+			    }
+			    span.roman_num {
+				    position: static;
+				    font-size: 30px;
+				    margin-top: 10px;
+			    }
+			    span.description {
+				    margin-left:auto;
+				    margin-right:auto;
+				    padding-left:0;
+				    margin-top: 10px;
+			    }
+		    }
+	    }
+    }
   }
+  
+  
+  
+  .sp_arrows {
+	  position: relative;
+		display: flex;
+		justify-content: space-between;
+		background: #071d25;
+		width:100vw;
+		margin-left:-48px;
+		margin-top: 39px;
+	}
+  
+  
+  .sp_arrow {
+	  flex-basis:50%;
+	  height: 68px;
+	  .sp_arrow_inner {
+		  display: flex;
+		  align-items: center;
+		  position: relative;
+		  width:38px;
+		  height:100%;
+		  margin:0 auto;
+	  }
+	  .arrow {
+		  position: absolute;
+		  z-index:1;
+	  }
+  }
+  
+  
+.sp_arrow_left {
+	border-right:2px solid $bluedark;
+	.arrow {
+		left:16px;
+	}
+}
+
+.sp_arrow_right {
+	display: flex;
+	justify-content: flex-end;
+	.arrow {
+		right:16px;
+		transform: rotate(180deg);
+	}
+}
+
+
+
+.sec_bottom_left {
+	padding-bottom: 31px;
+	h1.sec_one_h1 {
+		font-size: 45px;
+		line-height: 50px;
+		text-align: center;
+		max-width:400px;
+		margin-left:auto;
+		margin-right:auto;
+		&:after {
+			margin: 34px auto 30px;
+		}
+	}
+}
+
+
+.phoenix_cutout {
+	top: 79px;
+	justify-content: center;
+	&:before {
+		display: none;
+	}
+	.pheonix_spacer_one, .pheonix_spacer_two {
+		flex-grow:inherit;
+		width:100%;
+		height:250px;
+		background: $bluedark;
+		flex-basis:auto;
+	}
+	.pheonix_spacer_two {
+		
+	}
+	img.phoenix_cutout_img {
+		width: 398px;
+		margin-right:0;
+		flex-shrink: 0;
+		margin-left:-1px;
+		margin-right:-1px;
+	}
+}
+
+
+.sec_bottom_bg {
+	margin-top: -662px;
+}
+
+
+.sec_bottom_inner {
+  margin: -122px auto 0;
+}
+
+
+.sec_bottom_left.content {
+	.sec_one_intro {
+		font-size: 19px;
+		line-height: 30px;
+		text-align: center;
+		p {
+			
+		}
+	}
+	.sec_one_left_content {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 595px) {
+	
+	
+	.sec_one_top_row_left {
+		span.sec_one_largeheader {
+    	max-width: 460px;
+    }
+	}
+	
+	.sec_one_top_row {
+		padding:0;
+	}
+	
+	
+	.sec_one_top_row_left {
+		span.sec_one_subheader {
+			max-width: 240px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		span.sec_one_largeheader {
+			margin: 16px auto 0;
+		}
+	}
+	
+	
+	a.request_button {
+		width:100%;
+		max-width: 325px;
+	}
+
+
+	
+	
+} /* Media Query */
+
+
