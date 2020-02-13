@@ -5,7 +5,7 @@
 	z-index: 1;	
 	margin-top: 740px;
 	background: #fff;
-	padding:1px 0 120px 0px;
+	padding:1px 60px 120px;
 }
 
 
@@ -53,3 +53,24 @@ span.sec_two_title {
 		flex-basis:45.5%;
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	#section_two {
+		padding: 1px 60px 105px;
+	}
+	
+	.sec_two_inner {
+    margin: 115px auto 0px;
+  }
+  
+  
+  .sec_two_inner_content {
+   	padding: 48px 0 0;
+   	.sec_two_col {
+	   	flex-basis: 48%;
+   	}
+   }
+	
+} /* Media Query */
