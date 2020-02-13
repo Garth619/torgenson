@@ -213,6 +213,8 @@
 		
 		<picture>
 		
+			<source media="(max-width: 1150px)" srcset="<?php bloginfo('template_directory');?>/images/hero-tablet.jpg">
+		
 			<img class="hero" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
 		
 		</picture>

@@ -1089,7 +1089,26 @@ a.request_button {
   .sec_bottom_inner {
     margin: -344px auto 0;
    }
+   
+   
+   img.hero {
+	   margin-top:-35px;
+   }
   
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 890px) {
+	
+	
+	
+	img.hero {
+  	object-position: 45% 0;
+	}
+	
+	
 	
 } /* Media Query */
 
@@ -1347,7 +1366,13 @@ a.request_button {
 	.sec_one_left_content {
 		font-size: 18px;
 		line-height: 30px;
+		text-align: center;
 	}
+}
+
+
+.sec_bottom_inner {
+	padding: 0px 20px;
 }
 	
 	
@@ -1386,6 +1411,18 @@ a.request_button {
 	}
 
 
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 490px) {
+	
+	img.hero {
+		margin-top: -26px;
+		object-position:48% 0%;
+	}
+	
 	
 	
 } /* Media Query */
