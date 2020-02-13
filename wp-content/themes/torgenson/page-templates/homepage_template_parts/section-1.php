@@ -25,8 +25,14 @@
 					<div class="sec_one_video_wrapper sec_one_right_box">
 						
 						<div class="sec_one_video_inner">
+														
+							<picture>
 							
-							<img src="<?php bloginfo('template_directory');?>/images/video-image.jpg"/>
+								<source media="(max-width: 700px)" srcset="<?php bloginfo('template_directory');?>/images/video-image-mobile.jpg">
+							
+								<img src="<?php bloginfo('template_directory');?>/images/video-image.jpg"/>
+							
+							</picture>
 							
 							<div class="sec_one_video_overlay">
 								
@@ -72,7 +78,7 @@
 								
 								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
 								
-								<span class="description">“ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</span>
+								<span class="description">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</span>
 								
 								<span class="name">Name</span>
 								

@@ -313,7 +313,19 @@ $('.sec_one_testi_slider').slick({
 	arrows:true,
 	fade:true,
 	prevArrow:".test_arrow_left",
-	nextArrow:".test_arrow_right"
+	nextArrow:".test_arrow_right",
+	responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+      slidesToShow: 1,
+      adaptiveHeight:true,
+      slidesToScroll: 1,
+      autoplay: true,
+			autoplaySpeed: 4500,
+     }
+   }
+	]
  });
 
  
