@@ -68,7 +68,7 @@ h1,h2,h3,h4 {
 			}
 			h3 {
 				font-size: 22px;
-				line-height: 30px;
+				line-height: 28px;
 				text-transform: uppercase;
 				margin-bottom:30px;
 				color:#0d3745;
@@ -104,7 +104,7 @@ h1,h2,h3,h4 {
 	
 	
 	.content {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 25px;
 		h2 {
 			font-size: 24px;
@@ -115,6 +115,23 @@ h1,h2,h3,h4 {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.content {
+		font-size: 17px;
+		line-height: 33px;
+		h2 {
+			
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
 
 @media screen and (max-width: 767px) {
 	
@@ -131,6 +148,13 @@ img.aligncenter {
 	height:auto;
 }
 	
+	
+	
+	.content {
+		p {
+			margin-bottom: 20px;
+		}
+	}
 	
 	
 	
