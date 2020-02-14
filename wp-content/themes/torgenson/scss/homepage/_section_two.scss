@@ -74,3 +74,38 @@ span.sec_two_title {
    }
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	#section_two {
+		padding:1px 40px 100px;
+	}
+	
+	.sec_two_inner {
+    margin: 103px auto 0px;
+  }
+  
+  span.sec_two_title {
+	  font-size: 50px;
+	  line-height: 50px;
+	  &:after {
+		 	margin: 50px auto 0;
+	  }
+  }
+  
+      
+	.sec_two_intro {
+		font-size: 18px;
+		line-height: 33px;
+		margin: 43px auto 0;
+		max-width: 760px;
+	}
+	
+	.sec_two_inner_content {
+    padding: 65px 0 0;
+	}
+	
+	
+} /* Media Query */
