@@ -140,7 +140,7 @@
 			
 		</div><!-- sec_one_top_inner -->
 		
-		<div class="sec_one_sp">
+		<div class="sec_one_sp magikline">
 			
 			<span class="why_choose">Why Choose Us?</span><!-- why_choose -->
 			

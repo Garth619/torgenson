@@ -504,38 +504,36 @@ var pgurl = window.location.href;
 	// section one magic line
 	
 	
-if($('.magikline').length >0 ){// just show on homepage class 'nav'
+if($('.sec_one_sp').length >0 ){// just show on homepage class 'nav'
   
-  	
-    
-  
+  	$(function() {
 
         var $el, leftPos, newWidth,
-            $mainNav = $('.magikline').find("ul");
+            $mainNav = $('.sec_one_sp').find("ul");
 
-        $mainNav.append("<li class='magic-line'></li>");
-        var $magicLine = $(".magic-line");
+        $mainNav.append("<li id='magic-line'></li>");
+        var $magicLine = $("#magic-line");
 
 
 
-        if($('.magikline ul > li').hasClass('active')) {
+        if($('.sec_one_sp ul > li').hasClass('active')) {
             $magicLine
                 .css({
-                    "left": $('.magikline').find("ul > li.active").position().left,
-                    "width": $('.magikline ul > li.active a').width()
+                    "left": $('.sec_one_sp').find("ul > li.active").position().left,
+                    "width": $('.sec_one_sp ul > li.active a').width()
                 }).data("origLeft", $magicLine.position().left);
         } else {
             $magicLine
                 .css({
                     "left": 0,
-                    "width": $('.magikline ul > li:first a').width()
+                    "width": $('.sec_one_sp ul > li:first a').width()
                 }).data("origLeft", $magicLine.position().left);
         }
 
 
 
 
-        $('.magikline').find("ul > li:not(.magic-line)").hover(function() {
+        $('.sec_one_sp').find("ul > li:not(#magic-line)").hover(function() {
             $el = $(this);
             leftPos = $el.position().left;
             newWidth = $el.children().width();
@@ -546,12 +544,10 @@ if($('.magikline').length >0 ){// just show on homepage class 'nav'
         }, function() {
             $magicLine.stop().animate({
                 left: $magicLine.data("origLeft"),
-                width: $('.magikline ul > li.active a').width()
+                width: $('.sec_one_sp ul > li.active a').width()
             });
         });
-
- 
-
+ });
     
     
 }

@@ -4,6 +4,15 @@
 	background: $bluedark;
 	position: relative;
 	z-index:1;
+	//height:807px;
+	height:1000px;
+	position: relative;
+	svg#pheonix {
+		fill:#061e26;
+		position: absolute;
+		top:50px;
+		left:-220px;
+	}
 }
 
 .sec_three_inner {
@@ -11,12 +20,14 @@
 	max-width: 1920px;
 	padding:0 130px;
 	margin:0 auto;
-	height:1000px;
+	position: relative;
+	z-index:1;
 }
 
 
 .sec_three_left {
 	flex-basis:425px;
+	flex-shrink: 0;
 }
 
 span.sec_three_cr_title {
@@ -31,6 +42,7 @@ span.sec_three_cr_title {
 
 .sec_three_right {
 	flex-grow:1;
+	padding-left:5.5%;
 }
 
 
@@ -45,7 +57,7 @@ a.sec_three_button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: all 200ms ease-in-out;
+	transition: all 300ms ease-in-out;
 	@include sans_black;
 	&:hover {
 		background: #fff;
@@ -64,3 +76,93 @@ a.sec_three_button {
 		}
 	}
 }
+
+.sec_three_cr {
+	margin-top:223px;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		list-style: none;
+		border-bottom: 1px solid #3a4a50;
+		padding-bottom:85px;
+		li {
+			flex-basis:33%;
+			&:nth-of-type(1) {
+				a {
+					span.cr_description {
+						max-width: 240px;
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				padding-left:30px;
+				a {
+					span.cr_description {
+						max-width: 240px;
+					}
+				}
+			}
+			&:nth-of-type(3) {
+				padding-left:80px;
+				a {
+					span.cr_description {
+						max-width: 250px;
+					}
+				}
+			}
+			span {
+				display: block;
+			}
+			span.cr_title {
+				color:#6d7d82;
+				text-transform: uppercase;
+				font-size: 16px;
+				letter-spacing: 0.1em;
+				@include sans_black;
+			}
+			span.cr_amount {
+				color:#fff;
+				text-transform: uppercase;
+				font-size: 80px;
+				margin-top:17px;
+				@include sans_bold;
+				&:after {
+					content:"";
+					display: block;
+					width:59px;
+					height:2px;
+					background: $red;
+					margin:20px 0 10px 0;
+				}
+			}
+			span.cr_description {
+				color:#6d7d82;
+				font-size: 19px;
+				line-height: 28px;
+				margin-top:27px;
+				@include sans_reg;
+			}
+		}
+		.magic-line {
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+     z-index:1;
+     padding: 0;
+     width: 284px !important;
+     height: 6px;
+     border:none;
+     background: $red;
+     }
+	}
+}
+
+
+
+
+
+
+
+
+
