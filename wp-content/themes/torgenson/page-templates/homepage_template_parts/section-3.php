@@ -8,7 +8,7 @@
 			
 			<span class="sec_three_cr_title">Client Success</span><!-- sec_three_cr_title -->
 			
-			<a class="sec_three_button" href="">
+			<a class="sec_three_button desktop" href="">
 				
 				<span>View All Results</span>
 				
@@ -22,7 +22,23 @@
 			
 			<div class="sec_three_cr magikline">
 				
-				<ul>
+				<div class="sec_three_arrow sec_three_arrow_left">
+					
+					<div class="sec_three_arrow_inner">
+					
+						<div class="arrow">
+						
+							<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+						
+						</div><!-- arrow -->
+					
+						<span class="arrow_circle"></span>
+					
+					</div><!-- sec_three_arrow_inner -->
+					
+				</div><!-- sec_three_arrow_left -->
+				
+				<ul class="sec_three_slider">
 					<li class="one">
 					<a>
 						<span class="cr_title">Personal Injury</span><!-- cr_title -->
@@ -46,9 +62,33 @@
 					</li>
 				</ul>
 				
+				<div class="sec_three_arrow sec_three_arrow_right">
+					
+					<div class="sec_three_arrow_inner">
+						
+						<div class="arrow">
+						
+							<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+						
+						</div><!-- arrow -->
+					
+						<span class="arrow_circle"></span>
+						
+					</div><!-- sec_three_arrow_inner -->
+					
+				</div><!-- sec_three_arrow_right -->
+				
 			</div><!-- sec_three_cr -->
 			
 		</div><!-- sec_three_right -->
+		
+		<a class="sec_three_button mobile" href="">
+				
+			<span>View All Results</span>
+				
+			<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+				
+		</a><!-- sec_three_button -->
 		
 	</div><!-- sec_three_inner -->
 	

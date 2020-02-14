@@ -348,6 +348,28 @@ $('.sec_one_testi_slider').slick({
     }
 	]
  });
+ 
+ 
+ 
+ 
+ $('.sec_three_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:true,
+	fade:true,
+	adaptiveHeight:true,
+	mobileFirst:true,
+	prevArrow:".sec_three_arrow_left",
+	nextArrow:".sec_three_arrow_right",
+	responsive: [
+    {
+      breakpoint: 1150,
+      settings: "unslick",
+    }
+	]
+ });
+
 
  
  
