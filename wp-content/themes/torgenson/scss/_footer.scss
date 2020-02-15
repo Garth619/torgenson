@@ -1,0 +1,59 @@
+
+
+footer {
+	position: relative;
+	z-index:1;
+	height:3000px;
+}
+
+
+.form_wrapper {
+	background: $bluedark ;
+}
+
+.form_inner {
+	max-width:1095px;
+	margin:0 auto;
+	text-align: center;
+	padding:145px 0 0;
+	span.form_subheader {
+		color:#fff;
+		display: block;
+		font-size: 20px;
+		line-height: 25px;
+		@include sans_reg;
+	}
+	span.request_title {
+		display: block;
+		color:#fff;
+		font-size: 75px;
+		line-height: 80px;
+		margin-top:36px;
+		@include rufina_bold;
+		&:after {
+			content:"";
+			display: block;
+			width:213px;
+			height:4px;
+			margin:43px auto 0px;
+			background: $red;
+		}
+	}
+}
+
+
+.form_inner {
+	ul {
+		list-style: none;
+		li {
+			label {
+				display: none;
+			}
+			input,textarea {
+				width:100%;
+				display: block;
+				border:none;
+			}
+		}
+	}
+}

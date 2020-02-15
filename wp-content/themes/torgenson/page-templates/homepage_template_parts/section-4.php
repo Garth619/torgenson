@@ -31,8 +31,14 @@
 				<div class="sec_four_img_left">
 				
 					<div class="sec_four_img sec_four_img_one">
+						
+						<picture>
+						
+							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-1-small.jpg">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/content-image-1.jpg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/content-image-1.jpg"/>
+						
+						</picture>
 					
 					</div><!-- sec_four_img -->
 				
@@ -41,14 +47,26 @@
 				<div class="sec_four_img_right">
 				
 					<div class="sec_four_img sec_four_img_two">
+						
+						<picture>
 					
-						<img src="<?php bloginfo('template_directory');?>/images/content-image-2.jpg"/>
+							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-2-small.jpg">
+							
+							<img src="<?php bloginfo('template_directory');?>/images/content-image-2.jpg"/>
+						
+						</picture>
 					
 					</div><!-- sec_four_img -->
 				
 					<div class="sec_four_img sec_four_img_three">
+						
+						<picture>
+						
+							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-3-small.jpg">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/content-image-3.jpg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/content-image-3.jpg"/>
+						
+						</picture>
 					
 					</div><!-- sec_four_img -->
 				
