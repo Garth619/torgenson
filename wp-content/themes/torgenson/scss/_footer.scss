@@ -8,7 +8,8 @@ footer {
 
 
 .form_wrapper {
-	background: $bluedark ;
+	background: $bluedark;
+	padding:0 53px;
 }
 
 .form_inner {
@@ -54,6 +55,18 @@ footer {
 		li {
 			flex-basis:32.4%;
 			margin-bottom: 14px;
+			position: relative;
+			&:after {
+				content:"*";
+				display: block;
+				position: absolute;
+				top:25px;
+				right:10px;
+				z-index:1;
+				color:$red;
+				font-size: 25px;
+				@include sans_reg;
+			}
 			label {
 				display: none;
 			}
@@ -368,3 +381,158 @@ a.get_directions_button {
 		}
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	
+	.form_inner {
+		padding: 113px 0px 130px;
+		span.form_subheader {
+			font-size: 18px;
+		}
+		span.request_title {
+			font-size: 60px;
+			line-height: 75px;
+			margin-top: 16px;
+			&:after {
+				margin: 35px auto 63px;
+			}
+		}
+		.gform_footer {
+			height:74px;
+			width:232px;
+			margin: 36px auto 0;
+			input[type="submit"] {
+				font-size: 16px;
+			}
+		}
+		span.required {
+			margin-top: -113px;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	.form_wrapper {
+		padding: 0 20px;
+	}
+	
+	
+	.form_inner {
+		padding: 124px 0px 130px;
+		span.form_subheader {
+			
+		}
+		span.request_title {
+			font-size: 50px;
+			margin-top: 4px;
+			&:after {
+				margin: 26px auto 47px;
+			}
+		}
+		.gform_wrapper {
+			padding:0 15px;
+		}
+		ul {
+			li {
+				flex-basis:49%;
+				margin-bottom:20px;
+				input,textarea {
+					padding: 19px 10px;
+					font-size: 18px;
+				}
+			}
+			li#field_1_4 {
+				flex-basis:100%;
+			}
+		}
+		.gform_footer {
+			margin: 33px auto 0;
+			width:273px;
+			input[type="submit"] {
+				font-size: 18px;
+			}
+		}
+		span.required {
+			width:100%;
+			padding:0 15px;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	
+	.form_inner {
+		padding: 63px 0px 130px;
+		span.form_subheader {
+			font-size: 17px;
+			line-height: 23px;
+			max-width: 359px;
+			margin:0 auto;
+		}
+		span.request_title {
+			font-size: 45px;
+			line-height: 50px;
+			margin: 22px auto 0;
+			max-width: 369px;
+			&:after {
+				margin: 31px auto 35px;
+			}
+		}
+		.gform_wrapper {
+			
+		}
+		ul {
+			display: block;
+			li {
+				margin-bottom: 15px;
+				input,textarea {
+					
+				}
+			}
+			li#field_1_4 {
+				
+			}
+		}
+		.gform_footer {
+			margin: 57px auto 0;
+			input[type="submit"] {
+				
+			}
+		}
+		span.required {
+			margin-top: -127px;
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
