@@ -9,6 +9,8 @@
 			<span class="request_title">Request your free consultation</span><!-- request_title -->
 			
 			<?php gravity_form(1, false, false, false, '', true, 12); ?>
+			
+			<span class="required"><span>*</span> Required Field</span>
 		
 		</div><!-- form_inner -->
 		

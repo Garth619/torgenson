@@ -35,7 +35,7 @@ footer {
 			display: block;
 			width:213px;
 			height:4px;
-			margin:43px auto 0px;
+			margin:46px auto 55px;
 			background: $red;
 		}
 	}
@@ -43,9 +43,15 @@ footer {
 
 
 .form_inner {
+	position: relative;
 	ul {
 		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 		li {
+			flex-basis:32.4%;
+			margin-bottom: 14px;
 			label {
 				display: none;
 			}
@@ -53,7 +59,34 @@ footer {
 				width:100%;
 				display: block;
 				border:none;
+				font-size: 19px;
+				letter-spacing: 0.05em;
+				border-radius:5px;
+				padding:18px 20px;
+				@include sans_reg;
 			}
+			textarea {
+				height:159px;
+			}
+		}
+		li#field_1_6 {
+			flex-basis:100%;
+		}
+	}
+	span.required {
+		color:#fff;
+		position: absolute;
+		bottom:0;
+		left:0;
+		text-transform: lowercase;
+		font-size: 18px;
+		letter-spacing: 0.05em;
+		@include sans_reg;
+		span {
+			color:$red;
+			position: relative;
+			top:9px;
+			font-size: 25px;
 		}
 	}
 }
