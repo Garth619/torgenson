@@ -417,18 +417,18 @@ $('span.go_back').on('click', function(e) {
 // current sidebar
 
 
-/*
+
 
 var pgurl = window.location.href;
 	
-	$(".sidebar_box ul li").each(function(){
+	$(".sidebar ul li").each(function(){
   
   if($(this).find('a').attr("href") == pgurl)
     
     $(this).addClass("active");
 	
 	})
-*/
+
 
 
 // sidebar

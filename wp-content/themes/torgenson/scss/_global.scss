@@ -100,8 +100,10 @@ h1,h2,h3,h4 {
 			a {
 				color:$red;
 				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				@include sans_bold;
 				&:hover {
-					text-decoration: underline;
+					color:$bluedark
 				}
 			}
 			blockquote {
