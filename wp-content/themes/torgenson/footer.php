@@ -28,7 +28,7 @@
 				
 				<span class="location_header">Address</span><!-- location_header -->
 				
-				<span class="location_content">333 West Roosevelt Street<br/> footer_phoenix, AZ 85003</span><!-- location_content -->
+				<span class="location_content">333 West Roosevelt Street<br/> Phoenix, AZ 85003</span><!-- location_content -->
 				
 				<a class="get_directions_button" href="">
 				
