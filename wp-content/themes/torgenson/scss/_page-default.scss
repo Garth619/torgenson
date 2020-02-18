@@ -104,11 +104,9 @@ a.banner_button {
 }
 
 .page_inner_container {
-	background: pink;
 	max-width: 1600px;
 	display: flex;
 	margin:0 auto;
-	height:1000px;
 }
 
 .sidebar_wrapper {
@@ -211,4 +209,16 @@ a.banner_button {
 
 .page_content {
 	flex-grow:1;
+	padding:0 42px 0px 155px;
+}
+
+
+h1.page_header {
+	font-size: 65px;
+	line-height: 65px;
+	color:$bluelight;
+	border-bottom: 2px solid #cacaca;
+	padding-bottom:47px;
+	margin-bottom:45px;
+	@include rufina_bold;
 }
