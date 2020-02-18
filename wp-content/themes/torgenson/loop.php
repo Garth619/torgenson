@@ -16,6 +16,8 @@
 <?php endif; ?>
 
 
+<div class="blog_feed">
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<div class="blog_post">
@@ -45,6 +47,8 @@
 <?php endwhile; // end of loop ?>
 
 <?php endif; ?>
+
+</div><!-- blog_feed -->
 
 <?php wpbeginner_numeric_posts_nav(); ?>
 

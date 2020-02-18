@@ -21,6 +21,10 @@
 		padding-bottom:53px;
 		border-bottom:2px solid #cacaca;
 		margin-bottom: 50px;
+		&:last-of-type {
+			border-bottom:4px solid $bluedark;
+			margin-bottom:21px;
+		}
 		h2 {
 			a {
 				@include rufina_bold;
@@ -89,5 +93,36 @@ a.read_more_blog {
 	&:hover {
 		background: $bluedark;
 		color:#fff;
+	}
+}
+
+
+.paged_wrapper {
+	ul {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: flex-end;
+		li.active {
+			> a {
+					color:$bluedark;
+			}
+		}
+		li {
+			padding:0;
+			text-transform: uppercase;
+			font-size: 18px;
+			letter-spacing: 0.1em;
+			margin-left:27px;
+			&:before {
+				display: none;
+			}
+			a {
+				color:#a8a8a8;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$bluedark;
+				}
+			}
+		}
 	}
 }
