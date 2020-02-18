@@ -223,7 +223,7 @@
 	
 	<div class="sec_one_bottom">
 		
-		<img class="hero_bottom" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
+		
 		
 		<div class="phoenix_cutout">
 			

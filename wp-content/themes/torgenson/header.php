@@ -93,6 +93,6 @@
 		
 	</header>
 				
-
+	<img class="hero_bottom" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
 
 			
