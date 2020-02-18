@@ -99,7 +99,7 @@ a.banner_button {
 }
 
 .page_container {
-	padding:106px 65px 245px;
+	padding:106px 65px 285px;
 	background: $offwhite;
 }
 
@@ -118,6 +118,9 @@ a.banner_button {
 	background: $bluedark;
 	padding:52px 42px 37px;
 	margin-bottom:46px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 	h3 {
 		display: block;
 		color:#fff;
@@ -322,7 +325,7 @@ h1.page_header {
 	}
 	
 	.page_container {
-		padding: 80px 30px 50px;
+		padding: 60px 30px 50px;
 	}
 	
 	.sidebar_wrapper {
