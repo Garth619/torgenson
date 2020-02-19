@@ -671,3 +671,19 @@ a.get_directions_button {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 410px) {
+	
+	
+	.form_inner {
+		span.request_title {
+			font-size: 35px;
+			line-height: 45px;
+			max-width: 289px;
+		}
+	}
+	
+	
+	
+} /* Media Query */

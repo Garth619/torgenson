@@ -14,32 +14,26 @@ get_header(); ?>
 		
 		<div class="testi_wrapper">
 			
-			<div class="single_testi">
+			<?php if(get_field('testimonials')): ?>
+			 
+				<?php while(has_sub_field('testimonials')): ?>
+			 
+					<div class="single_testi">
 				
-				<img class="testi_star" src="<?php bloginfo('template_directory');?>/images/stars.svg"/><!-- testi_star -->
+						<img class="testi_star" src="<?php bloginfo('template_directory');?>/images/stars.svg"/><!-- testi_star -->
 				
-				<?php echo file_get_contents("wp-content/themes/torgenson/images/quotemark-blue.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/torgenson/images/quotemark-blue.svg"); ?>
 				
-				<span class="testi_description">“I received more than 10x what was initially offered 
-me by the other party’s insurance agency and they were incredibly kind and professional.”</span><!-- testi_description -->
+						<span class="testi_description"><?php the_sub_field( 'description' ); ?></span><!-- testi_description -->
 
-				<span class="testi_name">Emma D.</span><!-- testi_name -->
+						<span class="testi_name"><?php the_sub_field( 'name' ); ?></span><!-- testi_name -->
 				
-			</div><!-- single_testi -->
-			
-			<div class="single_testi">
-				
-				<img class="testi_star" src="<?php bloginfo('template_directory');?>/images/stars.svg"/><!-- testi_star -->
-				
-				<?php echo file_get_contents("wp-content/themes/torgenson/images/quotemark-blue.svg"); ?>
-				
-				<span class="testi_description">“I received more than 10x what was initially offered 
-me by the other party’s insurance agency and they were incredibly kind and professional.”</span><!-- testi_description -->
-
-				<span class="testi_name">Emma D.</span><!-- testi_name -->
-				
-			</div><!-- single_testi -->
-			
+					</div><!-- single_testi -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+						
 		</div><!-- testi_wrapper -->
 		
 	</div><!-- internal_container -->
