@@ -14,56 +14,24 @@ get_header(); ?>
 		
 		<div class="cr_wrapper">
 			
-			<div class="single_cr">
+			<?php if(get_field('case_results_page')): ?>
+			 
+				<?php while(has_sub_field('case_results_page')): ?>
+			 
+					<div class="single_cr">
 				
-				<span class="cr_type">Personal Injury</span><!-- cr_type -->
+						<span class="cr_type"><?php the_sub_field( 'case_result_type' ); ?></span><!-- cr_type -->
 				
-				<span class="cr_amount">$8.25M</span><!-- cr_amount -->
+						<span class="cr_amount"><?php the_sub_field( 'case_results_amount' ); ?></span><!-- cr_amount -->
 				
-				<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
+						<span class="cr_description"><?php the_sub_field( 'description' ); ?></span><!-- cr_description -->
 				
-			</div><!-- single_cr -->
-			
-			<div class="single_cr">
-				
-				<span class="cr_type">Personal Injury</span><!-- cr_type -->
-				
-				<span class="cr_amount">$8.25M</span><!-- cr_amount -->
-				
-				<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
-				
-			</div><!-- single_cr -->
-			
-			<div class="single_cr">
-				
-				<span class="cr_type">Personal Injury</span><!-- cr_type -->
-				
-				<span class="cr_amount">$8.25M</span><!-- cr_amount -->
-				
-				<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
-				
-			</div><!-- single_cr -->
-			
-			<div class="single_cr">
-				
-				<span class="cr_type">Personal Injury</span><!-- cr_type -->
-				
-				<span class="cr_amount">$8.25M</span><!-- cr_amount -->
-				
-				<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
-				
-			</div><!-- single_cr -->
-			
-			<div class="single_cr">
-				
-				<span class="cr_type">Personal Injury</span><!-- cr_type -->
-				
-				<span class="cr_amount">$8.25M</span><!-- cr_amount -->
-				
-				<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
-				
-			</div><!-- single_cr -->
-						
+					</div><!-- single_cr -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+									
 		</div><!-- cr_wrapper -->
 		
 	</div><!-- internal_container -->
