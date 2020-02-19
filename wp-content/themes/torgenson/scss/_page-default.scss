@@ -114,7 +114,11 @@ a.banner_button {
 .page_container {
 	padding:106px 65px 285px;
 	background: $offwhite;
-	
+}
+
+.internal_container {
+	padding:106px 65px 190px;
+	background: $offwhite;
 }
 
 .page_inner_container {
@@ -266,6 +270,8 @@ h1.internal_title {
 	.page_container {
     padding: 106px 65px 200px;
   }
+  
+  
 	
 	
 } /* Media Query */
@@ -343,6 +349,10 @@ h1.internal_title {
 		padding: 106px 65px 130px;
 	}
 	
+	.internal_container {
+		padding: 106px 65px 130px;
+	}
+	
 	
 } /* Media Query */
 
@@ -367,6 +377,10 @@ h1.internal_title {
 	}
 	
 	.page_container {
+		padding: 60px 30px 50px;
+	}
+	
+	.internal_container {
 		padding: 60px 30px 50px;
 	}
 	

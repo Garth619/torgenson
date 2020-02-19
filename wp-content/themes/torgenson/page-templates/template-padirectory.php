@@ -8,7 +8,7 @@ get_header(); ?>
 		
 		<?php echo file_get_contents("wp-content/themes/torgenson/images/pheonix-test.svg"); ?>
 	
-	<div class="page_container">
+	<div class="internal_container">
 		
 		<h1 class="internal_title"><?php the_title();?></h1><!-- internal_title -->
 		
@@ -18,12 +18,9 @@ get_header(); ?>
 			
 		</div><!-- pa_directory_wrapper -->
 		
-	</div><!-- page_container -->
+	</div><!-- internal_container -->
 	
 	
 </div><!-- internal_main -->
 		
-		
-
-
 <?php get_footer(); ?>

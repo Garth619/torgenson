@@ -1,0 +1,58 @@
+
+
+
+
+.testi_wrapper {
+	position: relative;
+	z-index:1;
+	padding:85px 0 0;
+}
+
+
+.single_testi {
+	text-align: center;
+	max-width: 1000px;
+	margin:0 auto;
+	padding-bottom:70px;
+	margin-bottom:73px;
+	border-bottom: 2px solid #cacaca;
+	&:last-of-type {
+		border:none;
+		margin-bottom: 0;
+	}
+	img {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	svg#quoteblue {
+		path {
+			fill:$bluelight;
+		}
+	}
+	span {
+		display: block;
+	}
+	span.testi_description {
+		font-size: 27px;
+		line-height: 45px;
+		max-width: 715px;
+		margin:52px auto 0;
+		@include rufina_bold;
+		&:after {
+			content:"";
+			display: block;
+			width:200px;
+			height:4px;
+			background: $red;
+			margin:42px auto 0;
+		}
+	}
+	span.testi_name {
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		margin-top:34px;
+		@include sans_bold;
+	}
+}
