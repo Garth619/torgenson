@@ -514,7 +514,7 @@ var pgurl = window.location.href;
 	
 	$(window).resize(_.debounce(function() {
 		
-		if ($(window).width() > 1180) {
+		if ($(window).width() > 1181) {
 			
 			navDesktop();
 			
