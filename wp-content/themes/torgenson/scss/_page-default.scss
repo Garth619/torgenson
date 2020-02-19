@@ -2,7 +2,20 @@
 #internal_main {
 	position: relative;
 	z-index:1;
+	svg#pheonix {
+		position: absolute;
+		top:20px;
+		right:-430px;
+		width:1670px;
+		path {
+			fill:#eeeeee;
+			stroke:none;
+		}
+		
+	}
 }
+
+
 
 .internal_banner {
 	position: relative;
