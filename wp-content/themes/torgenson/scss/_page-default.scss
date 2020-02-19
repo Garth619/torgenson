@@ -114,6 +114,7 @@ a.banner_button {
 .page_container {
 	padding:106px 65px 285px;
 	background: $offwhite;
+	
 }
 
 .page_inner_container {
@@ -245,6 +246,16 @@ h1.page_header {
 }
 
 
+h1.internal_title {
+	font-size: 65px;
+	line-height: 65px;
+	color:$bluelight;
+	text-align: center;
+	position: relative;
+	z-index:1;
+	@include rufina_bold;
+}
+
 @media screen and (max-width: 1595px) {
 	
 	
@@ -276,6 +287,12 @@ h1.page_header {
 	
 	
 	h1.page_header {
+		font-size: 55px;
+		line-height: 55px;
+	}
+	
+	
+	h1.internal_title {
 		font-size: 55px;
 		line-height: 55px;
 	}
@@ -331,6 +348,9 @@ h1.page_header {
 
 
 
+
+
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -339,6 +359,11 @@ h1.page_header {
 		line-height: 50px;
 		padding-bottom: 30px;
 		margin-bottom: 35px;
+	}
+	
+	h1.internal_title {
+		font-size: 45px;
+		line-height: 50px;
 	}
 	
 	.page_container {
