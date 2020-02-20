@@ -14,193 +14,77 @@ get_header(); ?>
 		
 		<div class="video_wrapper">
 			
-			<div class="single_video">
+			<?php if(get_field('video_center')): ?>
+			 
+				<?php while(has_sub_field('video_center')): ?>
 				
-				<div class="single_video_thumbnail">
-					
-					<div class="single_video_thumb wisita wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- mywisita -->
-					
-					<div class="single_video_overlay">
+					<div class="single_video">
 						
-						<div class="play_button">
+						<?php if(get_sub_field('wistia_or_youtube_video') == "Youtube") { ?>
+						
+							<a href="https://www.youtube.com/embed/<?php the_sub_field( 'youtube_id' ); ?>" data-lity>
+				
+								<div class="single_video_thumbnail">
+					
+									<div class="single_video_thumb">
+						
+										<img class="youtube" src="https://img.youtube.com/vi/XBPjVzSoepo/0.jpg"/>
+						
+									</div><!-- single_youtube -->
+					
+									<div class="single_video_overlay">
+						
+										<div class="play_button">
 									
-							<span></span>
+											<span></span>
 									
-						</div><!-- play_button -->
+										</div><!-- play_button -->
 						
-					</div><!-- single_video_overlay -->
+									</div><!-- single_video_overlay -->
 					
-				</div><!-- single_video_thumbnail -->
+								</div><!-- single_video_thumbnail -->
 				
-				<div class="video_title_wrapper">
+								<div class="video_title_wrapper">
 				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
+									<span class="video_title"><?php the_sub_field( 'video_title' ); ?></span><!-- video_title -->
 				
-				</div><!-- video_title_wrapper -->
+							</div><!-- video_title_wrapper -->
 				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
+						</a>
+						
+						<?php } ?>
+						
+						<?php if(get_sub_field('wistia_or_youtube_video') == "Wistia") { ?>
 				
-				<a href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
-				
-				<div class="single_video_thumbnail">
+							<div class="single_video_thumbnail">
 					
-					<div class="single_video_thumb">
-						
-						<img class="youtube" src="https://img.youtube.com/vi/XBPjVzSoepo/0.jpg"/>
-						
-					</div><!-- single_youtube -->
+								<div class="single_video_thumb wisita wistia_embed wistia_async_<?php the_sub_field( 'wistia_id' ); ?> popover=true popoverContent=thumbnail"></div><!-- mywisita -->
 					
-					<div class="single_video_overlay">
+									<div class="single_video_overlay">
 						
-						<div class="play_button">
+										<div class="play_button">
 									
-							<span></span>
+											<span></span>
 									
-						</div><!-- play_button -->
+										</div><!-- play_button -->
 						
-					</div><!-- single_video_overlay -->
+									</div><!-- single_video_overlay -->
 					
-				</div><!-- single_video_thumbnail -->
+								</div><!-- single_video_thumbnail -->
 				
-				<div class="video_title_wrapper">
+								<div class="video_title_wrapper">
 				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
+									<span class="video_title"><?php the_sub_field( 'video_title' ); ?></span><!-- video_title -->
 				
-				</div><!-- video_title_wrapper -->
+								</div><!-- video_title_wrapper -->
 				
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
-				
-				<div class="single_video_thumbnail">
+						<?php } ?>
 					
-					<div class="single_video_thumb">
-						
-						<img class="youtube" src="https://img.youtube.com/vi/XBPjVzSoepo/0.jpg"/>
-						
-					</div><!-- single_youtube -->
-					
-					<div class="single_video_overlay">
-						
-						<div class="play_button">
-									
-							<span></span>
-									
-						</div><!-- play_button -->
-						
-					</div><!-- single_video_overlay -->
-					
-				</div><!-- single_video_thumbnail -->
-				
-				<div class="video_title_wrapper">
-				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
-				
-				</div><!-- video_title_wrapper -->
-				
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
-				
-				<div class="single_video_thumbnail">
-					
-					<div class="single_video_thumb">
-						
-						<img class="youtube" src="https://img.youtube.com/vi/XBPjVzSoepo/0.jpg"/>
-						
-					</div><!-- single_youtube -->
-					
-					<div class="single_video_overlay">
-						
-						<div class="play_button">
-									
-							<span></span>
-									
-						</div><!-- play_button -->
-						
-					</div><!-- single_video_overlay -->
-					
-				</div><!-- single_video_thumbnail -->
-				
-				<div class="video_title_wrapper">
-				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
-				
-				</div><!-- video_title_wrapper -->
-				
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
-				
-				<div class="single_video_thumbnail">
-					
-					<div class="single_video_thumb">
-						
-						<img class="youtube" src="https://img.youtube.com/vi/XBPjVzSoepo/0.jpg"/>
-						
-					</div><!-- single_youtube -->
-					
-					<div class="single_video_overlay">
-						
-						<div class="play_button">
-									
-							<span></span>
-									
-						</div><!-- play_button -->
-						
-					</div><!-- single_video_overlay -->
-					
-				</div><!-- single_video_thumbnail -->
-				
-				<div class="video_title_wrapper">
-				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
-				
-				</div><!-- video_title_wrapper -->
-				
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<div class="single_video_thumbnail">
-					
-					<div class="single_video_thumb wisita wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- mywisita -->
-					
-					<div class="single_video_overlay">
-						
-						<div class="play_button">
-									
-							<span></span>
-									
-						</div><!-- play_button -->
-						
-					</div><!-- single_video_overlay -->
-					
-				</div><!-- single_video_thumbnail -->
-				
-				<div class="video_title_wrapper">
-				
-					<span class="video_title">Firm Overview</span><!-- video_title -->
-				
-				</div><!-- video_title_wrapper -->
-				
-			</div><!-- single_video -->
+					</div><!-- single_video -->
+			 
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 									
 		</div><!-- video_wrapper -->
 		
