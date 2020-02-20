@@ -1,0 +1,54 @@
+
+
+.att_bio_wrapper {
+	position: relative;
+	z-index:1;
+	margin:13px auto;
+}
+
+.att_bio_top {
+	display: flex;
+	max-width: 1185px;
+	margin:0 auto;
+}
+
+.att_bio_left {
+	flex-basis:398px;
+	flex-shrink:0;
+}
+
+.att_profile_wrapper {
+	padding:31px;
+	background: #fff;
+	box-shadow: 0px 1px 14.85px 0.15px rgba(6, 23, 29, 0.2);
+	.att_profile_image {
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			height:auto;
+			display: block;
+		}
+	}
+}
+
+
+.att_bio_right {
+	padding:21px 0 0;
+	span.att_position {
+		display: block;
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 0.1em;
+		color:$bluedark;
+		margin-top:37px;
+		@include sans_bold;
+		&:after {
+			content:"";
+			display: block;
+			width:100%;
+			height:4px;
+			background: $red;
+			margin-top:20px;
+		}
+	}
+}

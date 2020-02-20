@@ -20,7 +20,6 @@ get_header(); ?>
 		
 	</div><!-- internal_container -->
 	
-	
 </div><!-- internal_main -->
 		
 <?php get_footer(); ?>
