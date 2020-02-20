@@ -346,12 +346,18 @@ $('.about_awards_slider').slick({
 	autoplaySpeed: 2500,
 	responsive: [
     {
-      breakpoint: 400,
+      breakpoint: 1390,
+      settings: {
+      	slidesToShow: 2,
+      	slidesToScroll: 2,
+			}
+   },
+   {
+      breakpoint: 985,
       settings: {
       	slidesToShow: 1,
-				adaptiveHeight:true,
-				slidesToScroll: 1,
-     }
+      	slidesToScroll: 1,
+			}
    }
 	]
  });

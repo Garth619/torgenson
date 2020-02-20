@@ -209,6 +209,12 @@ img.about_top_img {
 	
 	
 	
+	.about_awards_inner {
+    max-width: 970px;
+  }
+	
+	
+	
 } /* Media Query */
 
 
@@ -281,6 +287,19 @@ img.about_top_img {
 		}
 	}
 	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 985px) {
+	
+	
+	.about_awards_slide {
+    height: 265px;
+	}
 	
 	
 	
@@ -378,6 +397,17 @@ img.about_top_img {
 			font-size: 23px;
 			line-height: 38px;
 		}
+	}
+	
+	
+	
+	.about_awards_wrapper {
+		padding:0 30px;
+	}
+	
+	
+	.about_awards_slide {
+		height:190px;
 	}
 	
 	
