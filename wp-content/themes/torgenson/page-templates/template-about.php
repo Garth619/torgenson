@@ -66,6 +66,36 @@ get_header(); ?>
 		
 	</div><!-- about_middle -->
 	
+	<div class="about_bottom">
+		
+		<div class="about_bottom_inner">
+			
+			<div class="about_bottom_left">
+				
+				<div class="about_bottom_left_img">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/about-image3.jpg"/>
+					
+				</div><!-- about_bottom_left_img -->
+				
+			</div><!-- about_bottom_left -->
+			
+			<div class="about_bottom_right">
+				
+				<div class="about_right_quote_wrapper">
+					
+					<p>“We are a team of trial lawyers born and bred to fight. When you are hurt, you need lawyers who will have your back every single step of the way. At Torgenson Law,we are 100% dedicated to fighting insurance companies and large corporations on behalf of good people. We have their back.”</p>
+					
+					<span class="about_right_quote_name">John Torgenson</span><!-- about_right_quote_name -->
+					
+				</div><!-- about_right_quote_wrapper -->
+				
+			</div><!-- about_bottom_right -->
+			
+		</div><!-- about_bottom_inner -->
+		
+	</div><!-- about_bottom -->
+	
 </div><!-- internal_main -->
 		
 <?php get_footer(); ?>
