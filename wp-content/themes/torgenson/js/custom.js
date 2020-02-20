@@ -336,6 +336,26 @@ $('.sec_one_testi_slider').slick({
  });
 
 
+
+$('.about_awards_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+	arrows:false,
+	autoplay: true,
+	autoplaySpeed: 2500,
+	responsive: [
+    {
+      breakpoint: 400,
+      settings: {
+      	slidesToShow: 1,
+				adaptiveHeight:true,
+				slidesToScroll: 1,
+     }
+   }
+	]
+ });
+
  
  
  

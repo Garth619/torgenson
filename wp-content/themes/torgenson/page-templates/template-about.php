@@ -96,6 +96,48 @@ get_header(); ?>
 		
 	</div><!-- about_bottom -->
 	
+	<div class="about_awards_wrapper">
+		
+		<div class="about_awards_inner">
+			
+			<div class="about_awards_slider">
+				
+				<div class="about_awards_slide">
+					
+					<div class="about_awards_inner">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/award-1.jpg"/>
+							
+					</div><!-- about_awards_inner -->
+					
+				</div><!-- about_awards_slide -->
+				
+				<div class="about_awards_slide">
+					
+					<div class="about_awards_inner">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/awards-2.jpg"/>
+							
+					</div><!-- about_awards_inner -->
+					
+				</div><!-- about_awards_slide -->
+				
+				<div class="about_awards_slide">
+					
+					<div class="about_awards_inner">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/award-3.jpg"/>
+							
+					</div><!-- about_awards_inner -->
+					
+				</div><!-- about_awards_slide -->
+				
+			</div><!-- about_awards_slider -->
+			
+		</div><!-- about_awards_inner -->
+		
+	</div><!-- about_slider_wrapper -->
+	
 </div><!-- internal_main -->
 		
 <?php get_footer(); ?>

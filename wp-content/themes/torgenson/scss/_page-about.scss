@@ -54,6 +54,7 @@ img.about_top_img {
 
 .about_middle {
 	background: $bluedark;
+	padding:0 60px;
 }
 
 .about_middle_content {
@@ -100,6 +101,7 @@ img.about_top_img {
 
 .about_bottom {
 	background: $offwhite;
+	padding:0 60px;
 }
 
 
@@ -156,3 +158,37 @@ img.about_top_img {
 	}
 }
 
+
+.about_awards_wrapper {
+	background: #fff;
+	
+}
+
+.about_awards_inner {
+	max-width: 1470px;
+	margin:0 auto;
+}
+
+.about_awards_slider {
+	
+}
+
+.about_awards_slide {
+	height:327px;
+	.about_awards_inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		img {
+			max-width: 100%;
+			height:auto;
+			display: block;
+			margin:auto;
+		}
+	}
+}
+
+.about_awards_wrapper {
+	padding:0 60px;
+}
