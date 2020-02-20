@@ -143,8 +143,26 @@ a.request_button {
 			left:0;
 			object-fit:cover;
 		}
-		.sec_one_video_overlay {
+		.video_cap_wrapper {
 			position: absolute;
+			bottom:50px;
+			left:0;
+			text-align: center;
+			width:100%;
+			span {
+				color:#fff;
+				display: block;
+				text-transform: uppercase;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0.15em;
+				max-width:243px;
+				margin:0 auto;
+				@include sans_black;
+			}
+		}
+		.sec_one_video_overlay {
+			position: relative;
 			top:0;
 			left:0;
 			width:100%;
@@ -153,24 +171,8 @@ a.request_button {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			.video_cap_wrapper {
-				position: absolute;
-				bottom:50px;
-				left:0;
-				text-align: center;
-				width:100%;
-				span {
-					color:#fff;
-					display: block;
-					text-transform: uppercase;
-					font-size: 16px;
-					line-height: 20px;
-					letter-spacing: 0.15em;
-					max-width:243px;
-					margin:0 auto;
-					@include sans_black;
-				}
-			}
+			pointer-events: none;
+			
 			.play_button {
 				width:165px;
 				height:165px;
@@ -278,7 +280,6 @@ a.request_button {
 	position: relative;
 	margin:70px auto 0;
 	display: flex;
-	
 	justify-content: space-between;
 	.arrow {
 		position: absolute;
@@ -365,8 +366,6 @@ a.request_button {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		
-		
 		.magic-line {
      position: absolute;
      bottom: -59px;
