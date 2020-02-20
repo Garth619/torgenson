@@ -22,11 +22,15 @@ get_header(); ?>
 							
 							<?php $attorney_image = get_field( 'attorney_image' ); ?>
 							
-							<?php if ( $attorney_image ) { ?>
+							<?php if ( $attorney_image ) : ?>
 							
 								<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+								
+								<?php else:?>
+								
+								<img src="<?php bloginfo('template_directory');?>/images/attorney-comingsoon.jpg" alt="<?php echo $attorney_image['alt']; ?>" alt="placeholder" />
 							
-							<?php } ?>
+							<?php endif; ?>
 							
 						</div><!-- att_profile_image -->
 						
@@ -44,13 +48,15 @@ get_header(); ?>
 						
 						<div class="att_profile_image">
 							
-							<?php $attorney_image = get_field( 'attorney_image' ); ?>
-							
-							<?php if ( $attorney_image ) { ?>
+							<?php if ( $attorney_image ) : ?>
 							
 								<img src="<?php echo $attorney_image['url']; ?>" alt="<?php echo $attorney_image['alt']; ?>" />
+								
+								<?php else:?>
+								
+								<img src="<?php bloginfo('template_directory');?>/images/attorney-comingsoon.jpg" alt="<?php echo $attorney_image['alt']; ?>" alt="placeholder" />
 							
-							<?php } ?>
+							<?php endif; ?>
 
 							
 						</div><!-- att_profile_image -->

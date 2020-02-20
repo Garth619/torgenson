@@ -6,10 +6,11 @@
 	position: relative;
 	z-index:1;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap:wrap;
 	&:after {
 		content:"";
+		display: block;
 		flex-basis: 30%;
 	}
 }
