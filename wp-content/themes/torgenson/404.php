@@ -1,8 +1,31 @@
 <?php get_header(); ?>
 
-<h1>Not Found</h1>
+<div id="internal_main">
 		
-		<p>The page you were looking for appears to have been moved, deleted or does not exist. You could <span class="go_back">go back</span> to where you were or head straight to our <a href="/">home page</a>.</p>
+		<?php echo file_get_contents("wp-content/themes/torgenson/images/pheonix-test.svg"); ?>
+	
+	<div class="internal_container">
+		
+		<div class="not_found_wrapper">
+			
+			<span class="error_title"><?php the_field( 'not_subheader' ,'option'); ?></span><!-- error_title -->
+			
+			<h1 class="not_found_header internal_title"><?php the_field( 'not_found_header','option'); ?></h1>
+		
+			<div class="not_found_content">
+				
+				<?php the_field( 'not_found_verbiage','option'); ?>
+				
+			</div><!-- not_found_content -->
+			
+		</div><!-- not_found_wrapper -->
+		
+	</div><!-- internal_container -->
+	
+</div><!-- internal_main -->
+
+
+
 
 
 <?php get_footer(); ?>
