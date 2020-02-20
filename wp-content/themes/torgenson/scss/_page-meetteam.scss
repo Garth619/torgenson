@@ -18,10 +18,10 @@
 .single_att {
 	background: #fff;
 	flex-basis: 30%;
-	padding:30px 30px 0;
+	padding:30px 30px 20px;
 	text-align: center;
 	margin-bottom: 51px;
-	height:527px;
+	//height:527px;
 	box-shadow: 0px 1px 14.85px 0.15px rgba(6, 23, 29, 0.2);
 	&:hover {
 		a {
@@ -84,10 +84,46 @@
 			text-transform: uppercase;
 			color:$bluelight;
 			font-size: 15px;
+			line-height: 17px;
 			letter-spacing: 0.1em;
 			margin-top:16px;
+			min-height:40px;
+			max-width: 240px;
+			margin-left:auto;
+			margin-right:auto;
 			@include sans_bold;
 		}
 	}
 }
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.meet_team_wrapper {
+		margin-top:60px;
+		&:after {
+			flex-basis: 46.5%;
+		}
+	}
+	
+	.single_att {
+		flex-basis: 46.5%;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.meet_team_wrapper {
+		display: block;
+		margin-top:45px;
+		max-width: 440px;
+	}
+	
+	
+} /* Media Query */
 

@@ -376,14 +376,7 @@ h1.internal_title {
 		line-height: 50px;
 	}
 	
-	.page_container {
-		padding: 60px 30px 50px;
-	}
-	
-	.internal_container {
-		padding: 60px 30px 50px;
-	}
-	
+		
 	.sidebar_wrapper {
 		max-width: 100%;
 	}
@@ -395,5 +388,17 @@ h1.internal_title {
 		}
 	}
 
+
+} /* Media Query */
+
+@media screen and (max-width: 700px) {
+	
+	.page_container {
+		padding: 60px 30px 50px;
+	}
+	
+	.internal_container {
+		padding: 60px 30px 50px;
+	}
 
 } /* Media Query */

@@ -88,7 +88,7 @@ get_header(); ?>
 					
 					<span class="single_att_name">John Torgenson</span><!-- single_att_name -->
 					
-					<span class="single_att_position">Managing Partner</span><!-- single_att_position -->
+					<span class="single_att_position">Legal Administrator and Litigation Paralegal</span><!-- single_att_position -->
 					
 				</a>
 				
