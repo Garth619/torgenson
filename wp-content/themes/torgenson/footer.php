@@ -4,9 +4,9 @@
 		
 		<div class="form_inner">
 		
-			<span class="form_subheader">When you are hurt, you need lawyers who will have your back every single step of the way.</span><!-- form_subheader -->
+			<span class="form_subheader"><?php the_field( 'footer_form_subtitle','option'); ?></span><!-- form_subheader -->
 		
-			<span class="request_title">Request your free consultation</span><!-- request_title -->
+			<span class="request_title"><?php the_field( 'footer_largeheader','option'); ?></span><!-- request_title -->
 			
 			<?php gravity_form(1, false, false, false, '', true, 12); ?>
 			
@@ -26,13 +26,13 @@
 			
 			<div class="location_col">
 				
-				<span class="location_title">Torgenson Law</span><!-- location_title -->
+				<span class="location_title"><?php the_field( 'footer_firm_name','option'); ?></span><!-- location_title -->
 				
-				<span class="location_header">Address</span><!-- location_header -->
+				<span class="location_header"><?php the_field( 'footer_address_title','option'); ?></span><!-- location_header -->
 				
-				<span class="location_content">333 West Roosevelt Street<br/> Phoenix, AZ 85003</span><!-- location_content -->
+				<span class="location_content"><?php the_field( 'footer_address','option'); ?></span><!-- location_content -->
 				
-				<a class="get_directions_button" href="">
+				<a class="get_directions_button" href="<?php the_field( 'google_map_link','option'); ?>" target="_blank" rel="noopener">
 				
 					<span>Directions</span>
 				
@@ -44,31 +44,31 @@
 			
 			<div class="location_col">
 				
-				<span class="location_header">Phone Number</span><!-- location_header -->
+				<span class="location_header"><?php the_field( 'footer_phone_title','option'); ?></span><!-- location_header -->
 				
-				<a class="location_content" href="tel:6028332774">602.833.2774</a><!-- location_content -->
+				<a class="location_content" href="tel:<?php echo str_replace(['-', '.', '(', ')', ' '], '', get_field('footer_phone', 'option')); ?>"><?php the_field( 'footer_phone','option'); ?></a><!-- location_content -->
 				
-				<span class="location_header office_hours_title">Office Hours</span><!-- location_header -->
+				<span class="location_header office_hours_title"><?php the_field( 'footer_office_hours_title','option'); ?></span><!-- location_header -->
 				
-				<span class="location_content">Mon-Fri 8:00am - 5:00pm</span><!-- location_content -->
+				<span class="location_content"><?php the_field( 'footer_office_hours','option'); ?></span><!-- location_content -->
 				
-				<span class="location_header social_title">Social</span><!-- location_header -->
+				<span class="location_header social_title"><?php the_field( 'footer_social_title','option'); ?></span><!-- location_header -->
 				
 				<div class="social_wrapper">
 					
-					<a class="sm" href="">
+					<a class="sm" href="<?php the_field( 'facebook','option'); ?>" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/torgenson/images/facebook.svg"); ?>
 						
 					</a>
 					
-					<a class="sm" href="">
+					<a class="sm" href="<?php the_field( 'twitter','option'); ?>" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/torgenson/images/twitter.svg"); ?>
 						
 					</a>
 					
-					<a class="sm" href="">
+					<a class="sm" href="<?php the_field( 'linkedin','option'); ?>" target="_blank" rel="noopener">
 						
 						<?php echo file_get_contents("wp-content/themes/torgenson/images/linkedin.svg"); ?>
 						
@@ -99,9 +99,20 @@
 		<div class="copyright_inner">
 			
 			<ul>
-				<li>Copyright <?php echo date("Y"); ?> &copy; Torgenson Law</li>
-				<li><a href="">Privacy Policy</a></li>
-				<li><a href="">Disclaimer</a></li>
+				<li>Copyright <?php echo date("Y"); ?> &copy; <?php the_field( 'copyright_veribiage','option'); ?></li>
+				
+				<?php if(get_field('privacy_policy','option')) {?>
+					
+					<li><a href="<?php the_field( 'privacy_policy','option'); ?>">Privacy Policy</a></li>
+				
+				<?php } ?>
+				
+				<?php if(get_field('disclaimer','option')) {?>
+					
+					<li><a href="<?php the_field( 'disclaimer','option'); ?>">Disclaimer</a></li>
+				
+				<?php } ?>
+				
 			</ul>
 			
 			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">

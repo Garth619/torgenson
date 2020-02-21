@@ -24,6 +24,8 @@
 					
 					<div class="sec_one_video_wrapper sec_one_right_box">
 						
+						<div class="sec_one_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- sec_one_wistia -->
+						
 						<div class="sec_one_video_inner">
 														
 							<picture>
