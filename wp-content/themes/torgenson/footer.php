@@ -16,6 +16,8 @@
 		
 	</div><!-- form_wrapper -->
 	
+	<?php if(!is_page_template('page-templates/template-contact.php')) {?>
+	
 	<div class="location_info">
 		
 		<div class="location_inner">
@@ -89,6 +91,8 @@
 		</div><!-- footer_phoenix_cutout -->
 		
 	</div><!-- location_info -->
+	
+	<?php } ?>
 	
 	<div class="copyright_wrapper">
 		

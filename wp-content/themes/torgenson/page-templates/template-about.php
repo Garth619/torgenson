@@ -20,7 +20,14 @@ get_header(); ?>
 			
 		</div><!-- about_top_content_wrapper -->
 		
-		<img class="about_top_img" src="<?php bloginfo('template_directory');?>/images/internal-about.jpg"/><!-- about_top_img -->
+		
+		<?php $top_section_background = get_field( 'top_section_background' ); ?>
+		
+		<?php if ( $top_section_background ) { ?>
+			
+			<img class="about_top_img" src="<?php echo $top_section_background['url']; ?>" alt="<?php echo $top_section_background['alt']; ?>" />
+		
+		<?php } ?>
 		
 	</div><!-- about_top -->
 	
