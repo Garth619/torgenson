@@ -985,7 +985,7 @@ a.request_button {
   
   .sec_one_sp {
 	  background: $bluedark;
-	  margin: 110px auto 0;
+	  margin: 115px auto 0;
 	  max-width:771px;
 	  padding:0 48px;
 	  &:after {
@@ -1058,6 +1058,7 @@ a.request_button {
 					  	font-size: 19px;
 					  	line-height: 28px;
 					  	padding-left:45px;
+					  	
 				  	}
 			  }
 		  }
@@ -1099,7 +1100,8 @@ a.request_button {
 		  }
 	  }
 	  .sec_one_left_content {
-		  
+		  font-size: 19px;
+		  line-height: 40px;
 	  }
   }
   
@@ -1137,6 +1139,24 @@ a.request_button {
    
    img.hero {
 	   margin-top:-35px;
+   }
+   
+   
+   
+   .sec_one_testi_slide {
+	   img.stars {
+		 	width: 110px;
+	   }
+	   img.quote {
+		   width:25px;
+		   margin-top: -11px;
+	   }
+	   span.description {
+		   font-size: 19px;
+		   max-width: 260px;
+		   margin-top:30px;
+		    line-height: 27px;
+	   }
    }
   
 	
