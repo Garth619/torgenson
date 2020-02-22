@@ -91,7 +91,7 @@ span.sec_two_title {
 	  font-size: 50px;
 	  line-height: 50px;
 	  &:after {
-		 	margin: 50px auto 0;
+		 	margin: 53px auto 0;
 	  }
   }
   
@@ -99,12 +99,19 @@ span.sec_two_title {
 	.sec_two_intro {
 		font-size: 18px;
 		line-height: 33px;
-		margin: 43px auto 0;
+		margin: 38px auto 0;
 		max-width: 760px;
 	}
 	
 	.sec_two_inner_content {
     padding: 65px 0 0;
+	}
+	
+	
+	.sec_two_inner_content {
+		.sec_two_col {
+    	flex-basis: 46%;
+		}
 	}
 	
 	

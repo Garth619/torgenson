@@ -697,6 +697,7 @@ a.request_button {
 	
 	a.request_button {
 		margin-top: 31px;
+		width: 333px;
 		span {
 			font-size: 17px;
 			padding: 21px 0;
@@ -719,6 +720,7 @@ a.request_button {
 	
 	.sec_one_top_row_right {
     width: 588px;
+    margin-top: 4px;
   }
 	
 	.sec_one_right_box {
@@ -779,7 +781,7 @@ a.request_button {
   }
   
   .sec_one_sp {
-    margin: 146px auto 0;
+    margin: 145px auto 0;
     &:after {
 	  	margin-top: 48px;
     }
@@ -844,8 +846,8 @@ a.request_button {
 				font-size: 60px;
 				line-height: 60px;
 				&:after {
-					margin-top: 41px;
-					margin-bottom: 38px;
+					margin-top: 33px;
+					margin-bottom: 36px;
 				}
 			}
 		}
@@ -871,6 +873,8 @@ a.request_button {
 				line-height: 30px;
 			}
 			.sec_one_left_content {
+				font-size: 18px;
+				line-height: 30px;
 				p {
 					
 				}
