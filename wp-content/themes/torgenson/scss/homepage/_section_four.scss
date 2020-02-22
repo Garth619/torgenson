@@ -102,6 +102,9 @@
 	padding-right: 100px;
 	span.sec_four_title {
 		max-width: 100%;
+		&:after {
+			margin: 49px 0 55px;
+		}
 	}
 }
 
