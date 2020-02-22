@@ -7,10 +7,13 @@
 	height:807px;
 	position: relative;
 	svg#pheonix {
-		fill:#061e26;
 		position: absolute;
 		top:50px;
-		left:-220px;
+		left:-230px;
+		width:1000px;
+		path {
+				fill:#061e26;
+		}
 	}
 }
 

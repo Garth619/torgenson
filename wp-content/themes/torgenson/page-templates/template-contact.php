@@ -18,11 +18,11 @@
 					
 					<div class="contact_location_col">
 						
-						<span class="contact_header">Address</span><!-- contact_header -->
+						<span class="contact_header"><?php the_field( 'footer_address_title','option'); ?></span><!-- contact_header -->
 						
-						<span class="contact_item">333 West Roosevelt Street<br/> Phoenix, AZ 85003</span><!-- contact_item -->
+						<span class="contact_item"><?php the_field( 'footer_address','option'); ?></span><!-- contact_item -->
 						
-						<a class="contact_button" href="">
+						<a class="contact_button" href="<?php the_field( 'google_map_link','option'); ?>">
 							
 							<span>Directions</span>
 							
@@ -34,35 +34,35 @@
 					
 					<div class="contact_location_col">
 						
-						<span class="contact_header contact_phone_title">Phone Number</span><!-- contact_header -->
+						<span class="contact_header contact_phone_title"><?php the_field( 'footer_phone_title','option'); ?></span><!-- contact_header -->
 						
-						<span class="contact_item">(602) 833-2774</span><!-- contact_item -->
+						<a class="contact_item contact_phone" href="tel:<?php echo str_replace(['-', '.', '(', ')', ' '], '', get_field('footer_phone', 'option')); ?>"><?php the_field( 'footer_phone','option'); ?></a><!-- contact_item -->
 						
-						<span class="contact_header contact_office_title">Office Hours</span><!-- contact_header -->
+						<span class="contact_header contact_office_title"><?php the_field( 'footer_office_hours_title','option'); ?></span><!-- contact_header -->
 						
-						<span class="contact_item">Mon-Fri 8:00am - 5:00pm</span><!-- contact_item -->
+						<span class="contact_item"><?php the_field( 'footer_office_hours','option'); ?></span><!-- contact_item -->
 						
 					</div><!-- contact_location_col -->
 					
 					<div class="contact_location_col">
 						
-						<span class="contact_header contact_social_title">Social</span><!-- contact_header -->
+						<span class="contact_header contact_social_title"><?php the_field( 'footer_social_title','option'); ?></span><!-- contact_header -->
 						
 						<div class="contact_social_wrapper">
 					
-							<a class="sm" href="">
+							<a class="sm" href="<?php the_field( 'facebook','option'); ?>" target="_blank" rel="noopener">
 						
 								<?php echo file_get_contents("wp-content/themes/torgenson/images/facebook.svg"); ?>
 						
 							</a>
 					
-							<a class="sm" href="">
+							<a class="sm" href="<?php the_field( 'twitter','option'); ?>" target="_blank" rel="noopener">
 						
 								<?php echo file_get_contents("wp-content/themes/torgenson/images/twitter.svg"); ?>
 						
 							</a>
 					
-							<a class="sm" href="">
+							<a class="sm" href="<?php the_field( 'linkedin','option'); ?>" target="_blank" rel="noopener">
 						
 								<?php echo file_get_contents("wp-content/themes/torgenson/images/linkedin.svg"); ?>
 						

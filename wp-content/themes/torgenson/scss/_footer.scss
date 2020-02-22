@@ -191,7 +191,7 @@ footer {
 	display: flex;
 	max-width: 845px;
 	justify-content: space-between;
-	margin-top:145px;
+	margin-top: 141px;
 }
 
 .location_col {
@@ -276,7 +276,7 @@ a.get_directions_button {
 	display: inline-block;
 	border-radius: 45px;
 	text-decoration: none;
-	height:43px;
+	height:48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -330,7 +330,7 @@ a.get_directions_button {
 .copyright_wrapper {
 	//background: $bluedark;
 	position: relative;
-	padding:105px 40px 90px;
+	padding:102px 40px 90px;
 	z-index:2;
 	&:after {
 		content:"";

@@ -67,10 +67,12 @@ span.contact_header {
 	@include sans_bold;
 }
 
-span.contact_item {
+.contact_item {
 	font-size: 27px;
 	line-height: 30px;
 	margin-top:8px;
+	color:#fff;
+	text-decoration: none;
 }
 
 
