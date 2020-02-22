@@ -570,14 +570,15 @@ a.get_directions_button {
 			line-height: 23px;
 			max-width: 359px;
 			margin:0 auto;
+			letter-spacing: 0.025em;
 		}
 		span.request_title {
 			font-size: 45px;
 			line-height: 50px;
-			margin: 22px auto 0;
+			margin: 20px auto 0;
 			max-width: 369px;
 			&:after {
-				margin: 31px auto 35px;
+				margin: 33px auto 35px;
 			}
 		}
 		.gform_wrapper {
@@ -603,6 +604,7 @@ a.get_directions_button {
 		}
 		span.required {
 			margin-top: -127px;
+			padding:0;
 		}
 	}
 	
@@ -626,7 +628,7 @@ a.get_directions_button {
 	}
 	
 	a.get_directions_button {
-		margin: 40px auto 50px;
+		margin: 45px auto 50px;
 	}
 	
 	.location_col {
