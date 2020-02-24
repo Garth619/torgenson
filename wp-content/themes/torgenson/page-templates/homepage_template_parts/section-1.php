@@ -8,9 +8,9 @@
 				
 				<div class="sec_one_top_row_left">
 					
-					<span class="sec_one_subheader">phoenix personal injury attorneys</span><!-- sec_one_subheader -->
+					<span class="sec_one_subheader"><?php the_field( 'section_one_subheader' ); ?></span><!-- sec_one_subheader -->
 					
-					<span class="sec_one_largeheader">100% dedicated to helping good people who are&nbsp;hurt.</span><!-- sec_one_largeheader -->
+					<span class="sec_one_largeheader"><?php the_field( 'section_one_large_header' ); ?></span><!-- sec_one_largeheader -->
 					
 					<a class="request_button" href="#consultation">
 						
@@ -30,9 +30,13 @@
 														
 							<picture>
 							
-								<source media="(max-width: 700px)" srcset="<?php bloginfo('template_directory');?>/images/video-image-mobile.jpg">
+								<?php $section_one_video_thumbnail_desktop = get_field( 'section_one_video_thumbnail_desktop' ); ?>
+								
+								<?php $section_one_video_thumbnail_mobile = get_field( 'section_one_video_thumbnail_mobile' ); ?>
+
+								<source media="(max-width: 700px)" srcset="<?php echo $section_one_video_thumbnail_mobile['url']; ?>">
 							
-								<img src="<?php bloginfo('template_directory');?>/images/video-image.jpg"/>
+								<img src="<?php echo $section_one_video_thumbnail_desktop['url']; ?>" alt="<?php echo $section_one_video_thumbnail_desktop['alt']; ?>" />
 							
 							</picture>
 							
