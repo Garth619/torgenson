@@ -24,7 +24,7 @@
 					
 					<div class="sec_one_video_wrapper sec_one_right_box">
 						
-						<div class="sec_one_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- sec_one_wistia -->
+						<div class="sec_one_wistia wistia_embed wistia_async_<?php the_field( 'section_one_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- sec_one_wistia -->
 						
 						<div class="sec_one_video_inner">
 														
@@ -50,7 +50,7 @@
 								
 								<div class="video_cap_wrapper">
 								
-									<span class="video_cap">learn how we can<br/> help you in 90 seconds</span><!-- video_ca -->
+									<span class="video_cap"><?php the_field( 'section_one_video_caption' ); ?></span><!-- video_ca -->
 								
 								</div><!-- video_cap_wrapper -->
 								
@@ -64,48 +64,28 @@
 						
 						<div class="sec_one_testi_slider">
 							
-							<div class="sec_one_testi_slide">
+							<?php if(get_field('section_one_reviews_slide')): ?>
+							 
+								<?php while(has_sub_field('section_one_reviews_slide')): ?>
+							 
+									<div class="sec_one_testi_slide">
 								
-								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
+										<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
 								
-								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
+										<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
 								
-								<span class="description">“I received more than 10x what was initially offered me by the other party’s insurance agency and they were incredibly kind and professional.”</span>
+										<span class="description"><?php the_sub_field( 'description' ); ?></span>
 								
-								<span class="name">emma d.</span>
+										<span class="name"><?php the_sub_field( 'name' ); ?></span>
 								
-								<span class="client">Personal Injury Client</span>
+										<span class="client"><?php the_sub_field( 'type' ); ?></span>
 								
-							</div><!-- sec_one_testi_slide -->
-							
-								<div class="sec_one_testi_slide">
-								
-								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
-								
-								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
-								
-								<span class="description">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</span>
-								
-								<span class="name">Name</span>
-								
-								<span class="client">Personal Injury Client</span>
-								
-							</div><!-- sec_one_testi_slide -->
-							
-								<div class="sec_one_testi_slide">
-								
-								<img class="stars" src="<?php bloginfo('template_directory');?>/images/stars.svg"/>
-								
-								<img class="quote" src="<?php bloginfo('template_directory');?>/images/quotemark.svg"/>
-								
-								<span class="description">“I received more than 10x what was initially offered me by the other party’s insurance agency and they were incredibly kind and professional.”</span>
-								
-								<span class="name">Name.</span>
-								
-								<span class="client">Personal Injury Client</span>
-								
-							</div><!-- sec_one_testi_slide -->
-							
+									</div><!-- sec_one_testi_slide -->
+							    
+								<?php endwhile; ?>
+							 
+							<?php endif; ?>
+														
 						</div><!-- sec_one_testi_slider -->
 						
 						<div class="test_arrows">
@@ -148,33 +128,26 @@
 		
 		<div class="sec_one_sp magikline">
 			
-			<span class="why_choose">Why Choose Us?</span><!-- why_choose -->
+			<span class="why_choose"><?php the_field( 'section_one_why_choose_us' ); ?></span><!-- why_choose -->
 			
 			<ul class="sp_slider">
-				<li class="active">
-					<a>
-						<span class="roman_num">I.</span>
-						<span class="description">99% success in our cases , recovered millions of dollars for our injured clients</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span class="roman_num">II.</span>
-						<span class="description">Our clients are treated with  integrity, respect, honesty and an unwavering loyalty.</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span class="roman_num">III.</span>
-						<span class="description">There is no charge unless we  win; a case will never be delayed by our actions or failure to act.</span>
-					</a>
-				</li>
-				<li>
-					<a>
-						<span class="roman_num">IV.</span>
-						<span class="description">We will come to you (home or hospital) immediately to make sure you are protected.</span>
-					</a>
-				</li>
+				
+				<?php if(get_field('section_one_selling_points')): ?>
+				 
+					<?php while(has_sub_field('section_one_selling_points')): ?>
+				 
+						<li class=""><!-- Active class needed? -->
+							<a>
+								<span class="roman_num"><?php the_sub_field( 'number' ); ?></span>
+								<span class="description"><?php the_sub_field( 'description' ); ?></span>
+							</a>
+						</li>
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
+				
+				
 			</ul>
 			
 			<div class="sp_arrows">
@@ -219,9 +192,13 @@
 		
 		<picture>
 		
-			<source media="(max-width: 1150px)" srcset="<?php bloginfo('template_directory');?>/images/hero-tablet.jpg">
+			<?php $section_one_bg = get_field( 'section_one_bg' ); ?>
+			
+			<?php $section_one_bg_tablet = get_field( 'section_one_bg_tablet' ); ?>
+
+			<source media="(max-width: 1150px)" srcset="<?php echo $section_one_bg_tablet['url']; ?>">
 		
-			<img class="hero" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
+			<img class="hero" src="<?php echo $section_one_bg['url']; ?>" alt="<?php echo $section_one_bg['alt']; ?>"/>
 		
 		</picture>
 		
@@ -247,17 +224,17 @@
 				 
 				 <div class="sec_bottom_left content">
 					 
-					 <h1 class="sec_one_h1">Phoenix Personal Injury Attorneys</h1><!-- sec_one_h1 -->
+					 <h1 class="sec_one_h1"><?php the_field( 'section_one_header' ); ?></h1><!-- sec_one_h1 -->
 					 
 					 <div class="sec_one_intro">
 						 
-						 <p>Our team of Phoenix personal injury lawyers will not stop fighting until we uncover every single detail that we need to know. Our investigative process is deeply thorough and effective, and we keep you included in every step of the process so you’re never in the dark.</p>
+						 <?php the_field( 'section_one_intro' ); ?>
 						 
 					 </div><!-- sec_one_intro -->
 					 
 					 <div class="sec_one_left_content">
 						 
-						 <p>You can trust us to be completely honest with you and to continue defending your rights until the case has been closed. Because our only focus is personal injury law, we have a deep understanding of insurance law, medical care, medical bill payments, and case resolution. We use this knowledge to successfully fight for our clients, and we’ve done it many times before.</p>
+						 <?php the_field( 'section_one_content' ); ?>
 						 
 					 </div><!-- sec_one_left_content -->
 					 
