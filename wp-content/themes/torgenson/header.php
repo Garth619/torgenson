@@ -83,8 +83,6 @@
 				
 				<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
 				
-				
-				
 				<a class="phone" href="tel:<?php echo str_replace(['-', '.', '(', ')', ' '], '', get_field('header_phone', 'option')); ?>"><?php the_field( 'header_phone','option'); ?></a>
 				
 			</div><!-- free_consultation -->

@@ -4,21 +4,11 @@
 		
 		<div class="sec_four_left">
 			
-			<span class="sec_four_title">Why Hire A Personal Injury Attorney?</span><!-- sec_four_title -->
+			<span class="sec_four_title"><?php the_field( 'section_four_header' ); ?></span><!-- sec_four_title -->
 			
 			<div class="sec_four_content content">
 				
-				<h2>Get fully and fairly compensated</h2>
-
-				<p>While establishing economic losses that have already happened (like medical bills and property damage) is a relatively straightforward process, the same is not true for future losses or noneconomic injuries like physical and emotional pain or suffering. The assistance of an attorney will ensure that you get the compensation to which you are legally entitled.</p>
-
-				<h2>Defend your legal rights</h2>
-
-				<p>If you mistakenly say something that indicates partial liability, it could significantly affect the amount of compensation you end up receiving. When you retain a lawyer, he or she will communicate with the insurance company or the adverse party on your behalf, ensuring that you do not say or do anything to hurt your case.</p>
-
-				<h2>Navigate tricky insurance negotiation</h2>
-
-				<p>Insurance companies are sophisticated parties that are in the business of denying claims and undoubtedly have an army of skilled insurance defense lawyers ready to litigate a case at the drop of a hat. As an accident victim, you need to prepared to take your case to trial, and Torgenson Law can help.</p>
+				<?php the_field( 'section_four_content' ); ?>
 				
 			</div><!-- sec_four_content -->
 			
@@ -34,9 +24,13 @@
 						
 						<picture>
 						
-							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-1-small.jpg">
+							<?php $sec_four_image_one_desktop = get_field( 'sec_four_image_one_desktop' ); ?>
+							
+							<?php $sec_four_image_one_mobile = get_field( 'sec_four_image_one_mobile' ); ?>
+
+							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_one_mobile['url']; ?>">
 					
-							<img src="<?php bloginfo('template_directory');?>/images/content-image-1.jpg"/>
+							<img src="<?php echo $sec_four_image_one_desktop['url']; ?>" alt="<?php echo $sec_four_image_one_desktop['alt']; ?>" />
 						
 						</picture>
 					
@@ -49,10 +43,14 @@
 					<div class="sec_four_img sec_four_img_two">
 						
 						<picture>
-					
-							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-2-small.jpg">
+						
+							<?php $section_four_image_two_desktop = get_field( 'section_four_image_two_desktop' ); ?>
 							
-							<img src="<?php bloginfo('template_directory');?>/images/content-image-2.jpg"/>
+							<?php $sec_four_image_two_mobile = get_field( 'sec_four_image_two_mobile' ); ?>
+
+							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_two_mobile['url']; ?>">
+							
+							<img src="<?php echo $section_four_image_two_desktop['url']; ?>" alt="<?php echo $section_four_image_two_desktop['alt']; ?>" />
 						
 						</picture>
 					
@@ -62,9 +60,13 @@
 						
 						<picture>
 						
-							<source media="(max-width: 1480px)" srcset="<?php bloginfo('template_directory');?>/images/content-image-3-small.jpg">
+							<?php $section_four_image_three_desktop = get_field( 'section_four_image_three_desktop' ); ?>
+							
+							<?php $sec_four_image_three_mobile = get_field( 'sec_four_image_three_mobile' ); ?>
+
+							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_three_mobile['url']; ?>">
 					
-							<img src="<?php bloginfo('template_directory');?>/images/content-image-3.jpg"/>
+							<img src="<?php echo $section_four_image_three_desktop['url']; ?>" alt="<?php echo $section_four_image_three_desktop['alt']; ?>" />
 						
 						</picture>
 					

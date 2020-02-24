@@ -6,9 +6,9 @@
 		
 		<div class="sec_three_left">
 			
-			<span class="sec_three_cr_title">Client Success</span><!-- sec_three_cr_title -->
+			<span class="sec_three_cr_title"><?php the_field( 'section_three_header' ); ?></span><!-- sec_three_cr_title -->
 			
-			<a class="sec_three_button desktop" href="">
+			<a class="sec_three_button desktop" href="<?php the_field( 'section_three_view_all_results_link' ); ?>">
 				
 				<span>View All Results</span>
 				
@@ -39,27 +39,24 @@
 				</div><!-- sec_three_arrow_left -->
 				
 				<ul class="sec_three_slider">
-					<li class="one">
-					<a>
-						<span class="cr_title">Personal Injury</span><!-- cr_title -->
-						<span class="cr_amount">$8.25m</span><!-- cr_amount -->
-						<span class="cr_description">Gun injury led to client’s paraplegia</span><!-- cr_description -->
-					</a>
-					</li>
-					<li class="two">
-						<a>
-						<span class="cr_title">premises liability</span><!-- cr_title -->
-						<span class="cr_amount">$2.05m</span><!-- cr_amount -->
-						<span class="cr_description">Client severely injured when he rode ATV on defendant’s property</span><!-- cr_description -->
-						</a>
-					</li>
-					<li class="three">
-						<a>
-						<span class="cr_title">Personal Injury</span><!-- cr_title -->
-						<span class="cr_amount">$1.95m</span><!-- cr_amount -->
-						<span class="cr_description">Client was paralyzed while riding in the bed of a truck and the insurance company denied liability</span><!-- cr_description -->
-						</a>
-					</li>
+					
+					<?php if(get_field('section_three_case_results')): ?>
+					 
+						<?php while(has_sub_field('section_three_case_results')): ?>
+					 
+							<li class="<?php the_sub_field( 'class' ); ?>">
+								<a>
+									<span class="cr_title"><?php the_sub_field( 'type' ); ?></span><!-- cr_title -->
+									<span class="cr_amount"><?php the_sub_field( 'amount' ); ?></span><!-- cr_amount -->
+									<span class="cr_description"><?php the_sub_field( 'description' ); ?>a</span><!-- cr_description -->
+								</a>
+							</li>
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+					
+					
 				</ul>
 				
 				<div class="sec_three_arrow sec_three_arrow_right">
@@ -82,7 +79,7 @@
 			
 		</div><!-- sec_three_right -->
 		
-		<a class="sec_three_button mobile" href="">
+		<a class="sec_three_button mobile" href="<?php the_field( 'section_three_view_all_results_link' ); ?>">
 				
 			<span>View All Results</span>
 				
