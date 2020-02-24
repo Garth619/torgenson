@@ -239,7 +239,7 @@ a.banner_button {
 }
 
 
-h1.page_header {
+.content .page_header, .content h2.page_header {
 	font-size: 65px;
 	line-height: 65px;
 	color:$bluelight;
@@ -292,7 +292,7 @@ h1.internal_title {
 @media screen and (max-width: 1390px) {
 	
 	
-	h1.page_header {
+	.content .page_header, .content h2.page_header {
 		font-size: 55px;
 		line-height: 55px;
 	}
@@ -364,7 +364,7 @@ h1.internal_title {
 @media screen and (max-width: 767px) {
 	
 	
-	h1.page_header {
+	.content .page_header, .content h2.page_header {
 		font-size: 45px;
 		line-height: 50px;
 		padding-bottom: 30px;
