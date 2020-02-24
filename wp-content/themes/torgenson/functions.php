@@ -384,5 +384,24 @@ function wpbeginner_numeric_posts_nav() {
 }
 
 
+// Shortcode Blockquote
+
+function pageblockquote( $quote, $content = null ) { 
+	
+	$quote = shortcode_atts( array(
+       'name' => '',
+   ), $quote );
+	
+	
+	ob_start();?>
+	
+	<blockquote>
+		<p class="quote_content"><?php echo $content;?></p>
+		<p class="quote_name"><?php echo $quote['name']; ?></p>
+	</blockquote>
+	
+	<?php return ob_get_clean(); }
+
+add_shortcode( 'blockquote', 'pageblockquote' );
 
 
