@@ -57,7 +57,13 @@
 			
 			<a href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/torgenson-logo.svg"/>
+				<?php $logo = get_field( 'logo','option'); ?>
+				
+				<?php if ( $logo ) { ?>
+					
+					<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+				
+				<?php } ?>
 				
 			</a>
 			
@@ -75,9 +81,11 @@
 			
 			<div class="free_consultation">
 				
-				<span class="free_consult_title">Free Consultations</span><!-- free_consult_title -->
+				<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
 				
-				<a class="phone" href="tel:6023625633">(602) 362-5633</a>
+				
+				
+				<a class="phone" href="tel:<?php echo str_replace(['-', '.', '(', ')', ' '], '', get_field('header_phone', 'option')); ?>"><?php the_field( 'header_phone','option'); ?></a>
 				
 			</div><!-- free_consultation -->
 			
