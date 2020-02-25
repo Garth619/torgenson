@@ -6,7 +6,10 @@
 
 jQuery(document).ready(function($){
 	
-
+	
+	
+		
+		
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -228,6 +231,8 @@ jQuery(document).ready(function($){
       }
     }
 		
+		
+		$('body').addClass('ready');
 		
 		
 
@@ -550,7 +555,7 @@ if($('.magikline').length >0 ){// just show on homepage class 'nav'
             $magicLine
                 .css({
                     "left": $('.magikline').find("ul > li.active").position().left,
-                    "width": $('.magikline ul > li.active a').width()
+                    "width": $('.magikline ul > li.active a').width(),
                 }).data("origLeft", $magicLine.position().left);
         } else {
             $magicLine

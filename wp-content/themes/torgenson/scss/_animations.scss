@@ -1,7 +1,130 @@
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1180px) {
+	
+	
+	.sec_one_top_row_left {
+		span.sec_one_subheader {
+			transform: translateY(-35px);
+			opacity: 0;
+			transition: opacity 600ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+		span.sec_one_largeheader {
+			transform: translateY(-35px);
+			opacity: 0;
+			transition: opacity 600ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	a.request_button {
+		transform: translateY(-35px);
+		opacity: 0;
+		transition: opacity 600ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+	}
 	
 	
 	
+	.sec_one_top_row_right {
+		transform: translateY(-35px);
+		opacity: 0;
+		transition: opacity 600ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+	}
+	
+	
+	.sec_one_video_wrapper {
+		.sec_one_video_inner {
+			overflow: hidden;
+			img {
+				transform: scale(1.2,1.2);
+				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
+	
+	
+	body.ready {
+		.sec_one_top_row_left {
+			span.sec_one_subheader {
+				transform: translateY(0px);
+				opacity: 1;
+				transition-delay: 300ms;
+			}
+			span.sec_one_largeheader {
+				transform: translateY(0px);
+				opacity: 1;
+				transition-delay: 600ms;
+			}
+		}
+		a.request_button {
+			transform: translateY(0px);
+			opacity: 1;
+			transition-delay: 900ms;
+		}
+	}
+	
+	
+		body.ready {
+			.sec_one_top_row_right {
+				transform: translateY(0px);
+				opacity: 1;
+				transition-delay: 450ms;
+			}
+			.sec_one_video_wrapper {
+				&:hover {
+					.sec_one_video_inner {
+						.sec_one_video_overlay {
+							background: rgba(0,0,0,0.6);
+						}
+					}
+				}
+				.sec_one_video_inner {
+					img {
+						transform: scale(1,1);
+						transition-delay: 450ms;
+					}
+				}
+			}
+		}
+		
+		.test_arrow_left {
+			cursor: pointer;
+			&:hover {
+				.arrow {
+					transform: translateX(-5px);
+				}
+			}
+			.arrow {
+				transform: translateX(0px);
+				transition: transform 200ms ease-in-out;
+			}
+		}
+		
+		
+		.test_arrow_right {
+			cursor: pointer;
+			&:hover {
+				.arrow {
+					transform: translateX(5px) rotate(180deg);;
+				}
+			}
+			.arrow {
+				transform: translateX(0px) rotate(180deg);
+				transition: transform 200ms ease-in-out;
+			}
+		}
+		
+		
+		.sec_one_sp {
+			transform: translateY(-35px);
+			opacity: 0;
+			transition: opacity 600ms linear, transform 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+		
+		body.ready {
+			.sec_one_sp {
+				transform: translateY(0px);
+				opacity: 1;
+				transition-delay: 1200ms;
+			}
+		}
 	
 	
 	
