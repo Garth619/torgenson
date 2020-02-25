@@ -148,6 +148,15 @@ a.banner_button {
 		padding-bottom:37px;
 		@include rufina_bold;
 	}
+	ul.menu {
+		> li {
+			&:first-of-type {
+				> a {
+					border:none;
+				}
+			}
+		}
+	}
 	ul {
 		list-style: none;
 		> li.current-menu-ancestor {
@@ -218,7 +227,7 @@ a.banner_button {
 				display: block;
 				text-decoration: none;
 				padding: 26px 56px 26px 26px;
-				border-bottom:1px solid #3b494d;
+				border-top:1px solid #3b494d;
 				background: transparent;
 				transition: all 200ms ease-in-out;
 				@include sans_black;
@@ -232,6 +241,9 @@ a.banner_button {
 		}
 	}
 }
+
+
+
 
 .page_content {
 	flex-grow:1;

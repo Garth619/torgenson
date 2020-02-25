@@ -75,7 +75,16 @@
 				
 				<div class="close"></div><!-- close -->
 				
+				
+				<?php if(get_field('spanish_navigation')) : ?>
+				
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'spanish_menu' ) ); ?>
+				
+				<?php else:?>
+				
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+				<?php endif;?>
 			
 			</nav>
 			

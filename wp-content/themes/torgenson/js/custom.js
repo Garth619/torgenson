@@ -425,7 +425,7 @@ var pgurl = window.location.href;
 // sidebar
 
 
-	$('.sidebar ul > li.menu-item-has-children > a').addClass('active');
+	$('.sidebar ul > li.current-menu-ancestor > a').addClass('active');
 
 
 	$('.sidebar ul > li.menu-item-has-children > a').on('click', function(e) {

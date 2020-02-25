@@ -136,7 +136,7 @@
 				 
 					<?php while(has_sub_field('section_one_selling_points')): ?>
 				 
-						<li class=""><!-- Active class needed? -->
+						<li class="<?php the_sub_field( 'class' ); ?>"><!-- Active class needed? -->
 							<a>
 								<span class="roman_num"><?php the_sub_field( 'number' ); ?></span>
 								<span class="description"><?php the_sub_field( 'description' ); ?></span>

@@ -178,9 +178,6 @@ function gform_tabindexer( $tab_index, $form = false ) {
 }
 
 
-
-
-
 /* Remove Unnecessary Scripts
 -------------------------------------------------------------- */
 remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -193,6 +190,7 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 register_nav_menus(array(
     'main_menu' => 'Main Menu',
+    'spanish_menu' => 'Spanish Menu',
     'pa_menu' => 'PA Sidebar Menu',
 ));
 

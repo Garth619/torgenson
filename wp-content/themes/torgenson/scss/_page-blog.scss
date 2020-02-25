@@ -1,5 +1,18 @@
 
 
+
+.sidebar.blog {
+	ul {
+		> li {
+			&:first-of-type {
+				> a {
+					border:none;
+				}
+			}
+		}
+	}
+}
+
 .sidebar.recent_posts {
 	ul {
 		li {
