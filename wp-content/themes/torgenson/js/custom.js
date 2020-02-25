@@ -234,9 +234,15 @@ jQuery(document).ready(function($){
 		
 		$('body').addClass('ready');
 		
-		
-
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+		createWaypoint('sec_bottom_left_trigger', '.sec_bottom_left', 'visible', 500, null, true);
+		createWaypoint('section_two', '#section_two', 'visible', 500, null, true);
+		createWaypoint('section_three', '#section_three', 'visible', 500, null, true);
+		createWaypoint('section_four', '#section_four', 'visible', 500, null, true);
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 500, null, true);
+		createWaypoint('about_middle_trigger', '#about_middle_trigger', 'visible', 300, null, true);
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 300, null, true);
+		// reposition fixed image way before you get to it in the footer
+		//createWaypoint('section_four', 'img.hero_bottom', 'visible', 0, null, true);
     
    
 

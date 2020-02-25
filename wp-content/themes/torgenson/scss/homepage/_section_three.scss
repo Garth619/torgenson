@@ -64,6 +64,9 @@ a.sec_three_button {
 	&:hover {
 		background: #fff;
 		color:$red;
+		svg {
+			transform: translateX(7px) rotate(180deg);
+		}
 	}
 	span {
 		text-transform: uppercase;
@@ -72,7 +75,8 @@ a.sec_three_button {
 	}
 	svg {
 		margin-left:10px;
-		transform: rotate(180deg);
+		transform: translateX(0px) rotate(180deg);
+		transition: all 400ms ease-in-out;
 		path {
 			fill:$red;
 		}

@@ -222,7 +222,7 @@
 			 
 			 <div class="sec_bottom_inner">
 				 
-				 <div class="sec_bottom_left content">
+				 <div id="sec_bottom_left_trigger" class="sec_bottom_left content">
 					 
 					 <h1 class="sec_one_h1"><?php the_field( 'section_one_header' ); ?></h1><!-- sec_one_h1 -->
 					 

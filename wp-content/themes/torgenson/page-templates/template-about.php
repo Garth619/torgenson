@@ -31,7 +31,7 @@ get_header(); ?>
 		
 	</div><!-- about_top -->
 	
-	<div class="about_middle">
+	<div id="about_middle_trigger" class="about_middle">
 		
 		<div class="about_middle_content">
 			
@@ -79,7 +79,7 @@ get_header(); ?>
 		
 	</div><!-- about_middle -->
 	
-	<div class="about_bottom">
+	<div id="about_bottom_trigger" class="about_bottom">
 		
 		<div class="about_bottom_inner">
 			

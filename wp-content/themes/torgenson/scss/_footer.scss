@@ -285,6 +285,9 @@ a.get_directions_button {
 	&:hover {
 		background: #fff;
 		color:$red;
+		svg {
+			transform: translateX(5px) rotate(180deg);
+		}
 	}
 	span {
 		text-transform: uppercase;
@@ -293,7 +296,8 @@ a.get_directions_button {
 	}
 	svg {
 		margin-left:16px;
-		transform: rotate(180deg);
+		transform: translateX(0px) rotate(180deg);
+		transition: all 400ms ease-in-out;
 		path {
 			fill:$red;
 		}
