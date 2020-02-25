@@ -124,7 +124,12 @@
 	}
 }
 
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .single_video {
+	    padding-left:0;
+	    padding-right:0;
+    }
+}
 
 @media screen and (max-width: 1280px) {
 	

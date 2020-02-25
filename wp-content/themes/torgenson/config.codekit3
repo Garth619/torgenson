@@ -319,6 +319,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/hero-deskto-three.jpg": {
+		"ft": 16384,
+		"iS": 336523,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/hero-deskto-three.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/hero-deskto-two.jpg": {
+		"ft": 16384,
+		"iS": 170898,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/hero-deskto-two.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/images/hero-desktop.jpg": {
 		"ft": 16384,
 		"iS": 170898,

@@ -895,7 +895,17 @@ a.request_button {
 	
 } /* Media Query */
 
-
+@media screen and (max-width: 1180px) {
+	
+	
+	
+	#section_one {
+		margin-top: 126px;
+	}
+	
+	
+	
+} /* Media Query */
 
 @media screen and (max-width: 1150px) {
 	
@@ -1194,6 +1204,11 @@ a.request_button {
 } /* Media Query */
 
 @media screen and (max-width: 700px) {
+	
+	
+	#section_one {
+		margin-top: 95px;
+	}
 	
 	.sec_one_top_row_left {
 		span.sec_one_subheader {

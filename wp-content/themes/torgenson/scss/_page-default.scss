@@ -370,7 +370,17 @@ h1.internal_title {
 
 
 
-
+@media screen and (max-width: 1180px) {
+	
+	
+	
+	#internal_main {
+		margin-top:126px;
+	}
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 767px) {
@@ -404,6 +414,10 @@ h1.internal_title {
 } /* Media Query */
 
 @media screen and (max-width: 700px) {
+	
+	#internal_main {
+		margin-top:95px;
+	}
 	
 	.page_container {
 		padding: 60px 30px 50px;

@@ -66,6 +66,16 @@
 	}
 }
 
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .single_cr {
+	    padding-left:0;
+	    padding-right:0;
+    }
+}
+
+
+
 @media screen and (max-width: 1215px) {
 	
 	

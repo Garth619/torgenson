@@ -27,14 +27,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-
+<link href="https://fonts.googleapis.com/css?family=Rufina:700|Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
 
 <style>
 
 
 <?php the_field( 'review_css','option'); ?>
 
-@import url('https://fonts.googleapis.com/css?family=Rufina:700|Source+Sans+Pro:400,600,700,900&display=swap');
 
 </style>
 
@@ -107,7 +106,15 @@
 		</div><!-- header_inner -->
 		
 	</header>
+	
+	<?php $section_one_phoenix_background = get_field( 'section_one_phoenix_background' ); ?>
+	
+	<?php if ( $section_one_phoenix_background ) { ?>
+		
+		<img class="hero_bottom" src="<?php echo $section_one_phoenix_background['url']; ?>" alt="<?php echo $section_one_phoenix_background['alt']; ?>" />
+	
+	<?php } ?>
 				
-	<img class="hero_bottom" src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
+	
 
 			

@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 .meet_team_wrapper {
 	max-width: 1330px;
 	margin:90px auto -51px;
@@ -96,6 +101,19 @@
 		}
 	}
 }
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .single_att {
+	    padding-left:0;
+	    padding-right:0;
+    }
+}
+
+
 
 
 @media screen and (max-width: 1066px) {
