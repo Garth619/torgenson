@@ -28,6 +28,11 @@
 		text-decoration: none;
 	}
 	&:hover {
+		.video_title_wrapper {
+			span.video_title {
+				color:$red;
+			}
+		}
 		.single_video_thumbnail {
 			.single_video_overlay {
 				.play_button {
@@ -80,7 +85,7 @@
 				align-items: center;
 				position: relative;
 				top:-7px;
-				transition: all 200ms ease-in-out;
+				transition: all 300ms ease-in-out;
 				span {
 					display: block;
 					width:90px;
@@ -119,10 +124,17 @@
 			font-size: 20px;
 			letter-spacing: 0.1em;
 			color:$bluelight;
+			transition: all 200ms ease-in-out;
 			@include sans_bold;
 		}
 	}
 }
+
+
+
+
+
+
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
     .single_video {

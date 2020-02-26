@@ -30,9 +30,12 @@
 
 							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_one_mobile['url']; ?>">
 					
-							<img src="<?php echo $sec_four_image_one_desktop['url']; ?>" alt="<?php echo $sec_four_image_one_desktop['alt']; ?>" />
+							<img data-src="<?php echo $sec_four_image_one_desktop['url']; ?>" alt="<?php echo $sec_four_image_one_desktop['alt']; ?>" />
 						
 						</picture>
+						
+						
+
 					
 					</div><!-- sec_four_img -->
 				
@@ -50,7 +53,7 @@
 
 							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_two_mobile['url']; ?>">
 							
-							<img src="<?php echo $section_four_image_two_desktop['url']; ?>" alt="<?php echo $section_four_image_two_desktop['alt']; ?>" />
+							<img data-src="<?php echo $section_four_image_two_desktop['url']; ?>" alt="<?php echo $section_four_image_two_desktop['alt']; ?>" />
 						
 						</picture>
 					
@@ -66,7 +69,7 @@
 
 							<source media="(max-width: 1480px)" srcset="<?php echo $sec_four_image_three_mobile['url']; ?>">
 					
-							<img src="<?php echo $section_four_image_three_desktop['url']; ?>" alt="<?php echo $section_four_image_three_desktop['alt']; ?>" />
+							<img data-src="<?php echo $section_four_image_three_desktop['url']; ?>" alt="<?php echo $section_four_image_three_desktop['alt']; ?>" />
 						
 						</picture>
 					

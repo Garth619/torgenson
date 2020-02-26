@@ -214,6 +214,39 @@ img.about_top_img {
   }
 	
 	
+	.about_awards_slider {
+		.slick-dots {
+			bottom: 30px;
+			li.slick-active {
+				button {
+					&:before {
+						color:$red;
+					}
+				}
+			}
+			li:hover {
+				button {
+					&:before {
+						color:$red;
+					}
+				}
+			}
+			li {
+				margin:0;
+				width:16px;
+				button {
+					width:16px;
+					&:before {
+						width:16px;
+						opacity: 1;
+						color: $bluedark;
+						font-size:25px;
+					}
+				}
+			}
+		}
+	}
+	
 	
 } /* Media Query */
 
@@ -299,6 +332,36 @@ img.about_top_img {
 	
 	.about_awards_slide {
     height: 265px;
+	}
+	
+	
+	.about_awards_slider {
+		.slick-dots {
+			bottom: 13px;
+			li.slick-active {
+				button {
+					&:before {
+						
+					}
+				}
+			}
+			li:hover {
+				button {
+					&:before {
+						
+					}
+				}
+			}
+			li {
+				
+				button {
+					
+					&:before {
+						
+					}
+				}
+			}
+		}
 	}
 	
 	

@@ -27,15 +27,23 @@
 						<div class="sec_one_wistia wistia_embed wistia_async_<?php the_field( 'section_one_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- sec_one_wistia -->
 						
 						<div class="sec_one_video_inner">
+							
 														
 							<picture>
 							
 								<?php $section_one_video_thumbnail_desktop = get_field( 'section_one_video_thumbnail_desktop' ); ?>
 								
+								<?php $section_one_video_thumbnail_desktop_webp = get_field( 'section_one_video_thumbnail_desktop_webp' ); ?>
+								
 								<?php $section_one_video_thumbnail_mobile = get_field( 'section_one_video_thumbnail_mobile' ); ?>
+								
+								<?php $section_one_video_thumbnail_mobile_webp = get_field( 'section_one_video_thumbnail_mobile_webp' ); ?>
 
+								<source media="(max-width: 700px)" srcset="<?php echo $section_one_video_thumbnail_mobile_webp['url']; ?>" type="image/webp">
 								<source media="(max-width: 700px)" srcset="<?php echo $section_one_video_thumbnail_mobile['url']; ?>">
-							
+								
+								<source srcset="<?php echo $section_one_video_thumbnail_desktop_webp['url']; ?>" type="image/webp">
+								
 								<img src="<?php echo $section_one_video_thumbnail_desktop['url']; ?>" alt="<?php echo $section_one_video_thumbnail_desktop['alt']; ?>" />
 							
 							</picture>
@@ -190,13 +198,23 @@
 			
 		</div><!-- sec_one_sp -->
 		
+		
+		
 		<picture>
 		
 			<?php $section_one_bg = get_field( 'section_one_bg' ); ?>
 			
+			<?php $section_one_bg_desktop_webp = get_field( 'section_one_bg_desktop_webp' ); ?>
+			
+			<?php $section_one_bg_tablet_webp = get_field( 'section_one_bg_tablet_webp' ); ?>
+			
 			<?php $section_one_bg_tablet = get_field( 'section_one_bg_tablet' ); ?>
-
+			
+			<source media="(max-width: 1150px)" srcset="<?php echo $section_one_bg_tablet_webp['url']; ?>" type="image/webp">
+			
 			<source media="(max-width: 1150px)" srcset="<?php echo $section_one_bg_tablet['url']; ?>">
+			
+			<source srcset="<?php echo $section_one_bg_desktop_webp['url']; ?>" type="image/webp">
 		
 			<img class="hero" src="<?php echo $section_one_bg['url']; ?>" alt="<?php echo $section_one_bg['alt']; ?>"/>
 		
@@ -212,7 +230,7 @@
 			
 			<div class="pheonix_spacer pheonix_spacer_one"></div><!-- pheonix_spacer -->
 			
-			<img class="phoenix_cutout_img" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
+			<img class="phoenix_cutout_img" data-src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
 			
 			<div class="pheonix_spacer pheonix_spacer_two"></div><!-- pheonix_spacer -->
 			

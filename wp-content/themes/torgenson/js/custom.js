@@ -119,7 +119,8 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    // createWaypoint('section_two', null, null, '100%', loadImages, false);
+    createWaypoint('section_one', null, null, -5, loadImages, false);
+    createWaypoint('internal_main', null, null, -5, loadImages, false);
 
 
 
@@ -359,6 +360,7 @@ $('.about_awards_slider').slick({
     {
       breakpoint: 1390,
       settings: {
+	      dots:true,
       	slidesToShow: 2,
       	slidesToScroll: 2,
 			}
@@ -366,6 +368,7 @@ $('.about_awards_slider').slick({
    {
       breakpoint: 985,
       settings: {
+	      dots:true,
       	slidesToShow: 1,
       	slidesToScroll: 1,
 			}

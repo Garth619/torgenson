@@ -107,11 +107,11 @@
 		
 	</header>
 	
-	<?php $section_one_phoenix_background = get_field( 'section_one_phoenix_background' ); ?>
+	<?php $section_one_phoenix_background = get_field( 'section_one_phoenix_background',10 ); ?>
 	
 	<?php if ( $section_one_phoenix_background ) { ?>
 		
-		<img class="hero_bottom" src="<?php echo $section_one_phoenix_background['url']; ?>" alt="<?php echo $section_one_phoenix_background['alt']; ?>" />
+		<img class="hero_bottom" data-src="<?php echo $section_one_phoenix_background['url']; ?>" alt="<?php echo $section_one_phoenix_background['alt']; ?>" />
 	
 	<?php } ?>
 				

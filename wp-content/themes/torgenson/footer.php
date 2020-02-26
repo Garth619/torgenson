@@ -86,7 +86,13 @@
 			
 			<div class="footer_phoenix_spacer footer_phoenix_spacer_one"></div><!-- footer_phoenix_spacer -->
 			
-			<img class="footer_phoenix_cutout_img" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
+			<picture>
+			
+				<source media="(max-width: 1066px)" srcset="">
+				
+				<img class="footer_phoenix_cutout_img" src="<?php bloginfo('template_directory');?>/images/pheonix-cutout-2.svg"/>
+			
+			</picture>
 			
 		</div><!-- footer_phoenix_cutout -->
 		
@@ -117,7 +123,7 @@
 			
 			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/ilawyer-logo.svg"/>
+				<img data-src="<?php bloginfo('template_directory');?>/images/ilawyer-logo.svg"/>
 				
 			</a><!-- ilawyer -->
 			

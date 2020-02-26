@@ -1,5 +1,7 @@
 #section_one {
 	width:100%;
+	position: relative;
+	z-index: 1;
 }
 
 
@@ -60,8 +62,8 @@ img.hero {
 
 
 a.request_button {
-	width:395px;
-	display: block;
+	//width:395px;
+	display: inline-block;
 	background: rgba(255,255,255, 0.2);
 	text-align: center;
 	text-decoration: none;
@@ -83,7 +85,7 @@ a.request_button {
 		font-size:20px;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		padding:25px 0;
+		padding: 25px 37px;
 		transition: all 200ms ease-in-out;
 		@include sans_bold;
 		&:before, &:after {
@@ -702,10 +704,10 @@ a.request_button {
 	
 	a.request_button {
 		margin-top: 31px;
-		width: 333px;
+		//width: 333px;
 		span {
 			font-size: 17px;
-			padding: 21px 0;
+			padding: 21px 22px;
 		}
 	}
 	
@@ -1493,7 +1495,7 @@ a.request_button {
 	
 	a.request_button {
 		width:100%;
-		max-width: 325px;
+		max-width: 335px;
 	}
 
 

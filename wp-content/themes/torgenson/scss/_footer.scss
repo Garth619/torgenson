@@ -458,7 +458,8 @@ a.get_directions_button {
 	.copyright_wrapper {
 		padding: 182px 40px 60px;
 		&:after {
-			display: none;
+			top: 255px;
+			//display: none;
 		}
 	}
 	   

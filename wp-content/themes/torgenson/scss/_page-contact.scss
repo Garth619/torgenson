@@ -64,6 +64,7 @@ span.contact_header {
 	font-size: 17px;
 	letter-spacing: 0.2em;
 	line-height: 17px;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.55);
 	@include sans_bold;
 }
 
@@ -99,6 +100,9 @@ a.contact_button {
 	&:hover {
 		background: #fff;
 		color:$red;
+		svg {
+			transform: translateX(5px) rotate(180deg);
+		}
 	}
 	span {
 		text-transform: uppercase;
@@ -107,7 +111,8 @@ a.contact_button {
 	}
 	svg {
 		margin-left:16px;
-		transform: rotate(180deg);
+		transform: translateX(0px) rotate(180deg);
+		transition: all 400ms ease-in-out;
 		path {
 			fill:$red;
 		}
