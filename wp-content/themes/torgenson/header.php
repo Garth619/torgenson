@@ -75,7 +75,7 @@
 				<div class="close"></div><!-- close -->
 				
 				
-				<?php if(get_field('spanish_navigation')) : ?>
+				<?php if(get_field('spanish_header_and_footer')) : ?>
 				
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'spanish_menu' ) ); ?>
 				
@@ -89,7 +89,15 @@
 			
 			<div class="free_consultation">
 				
-				<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
+				<?php if(!get_field('spanish_header_and_footer')) : ?>
+				
+					<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
+				
+				<?php else:?>
+				
+					<span class="free_consult_title"><?php the_field( 'spanish_free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
+				
+				<?php endif; ?>
 				
 				<a class="phone" href="tel:<?php echo str_replace(['-', '.', '(', ')', ' '], '', get_field('header_phone', 'option')); ?>"><?php the_field( 'header_phone','option'); ?></a>
 				

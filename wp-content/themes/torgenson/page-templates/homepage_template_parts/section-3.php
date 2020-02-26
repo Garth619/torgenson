@@ -12,7 +12,7 @@
 				
 				<div class="sec_three_button_inner">
 				
-					<span>View All Results</span>
+					<span><?php the_field( 'section_three_view_all_verbiage' ); ?></span>
 				
 					<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
 				
@@ -87,7 +87,7 @@
 				
 			<div class="sec_three_button_inner">
 				
-					<span>View All Results</span>
+					<span><?php the_field( 'section_three_view_all_verbiage' ); ?></span>
 				
 					<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
 				

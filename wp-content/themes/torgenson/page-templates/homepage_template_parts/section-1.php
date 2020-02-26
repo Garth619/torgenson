@@ -14,7 +14,7 @@
 					
 					<a class="request_button" href="#consultation">
 						
-						<span>Request Free Consultation</span>
+						<span><?php the_field( 'section_one_request_verbiage' ); ?></span>
 					
 					</a><!-- request_button -->
 					
