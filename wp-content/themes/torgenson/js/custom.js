@@ -419,6 +419,13 @@ $('span.go_back').on('click', function(e) {
 
 
 
+// wrap submit button for fluid width, this is so spanish words can be added
+
+
+$("footer .gform_footer").wrapInner("<div class='my_submit_inner'></div>");
+
+
+
 // current sidebar
 
 

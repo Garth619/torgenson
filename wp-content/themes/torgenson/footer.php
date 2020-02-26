@@ -33,10 +33,14 @@
 				<span class="location_content"><?php the_field( 'footer_address','option'); ?></span><!-- location_content -->
 				
 				<a class="get_directions_button" href="<?php the_field( 'google_map_link','option'); ?>" target="_blank" rel="noopener">
+					
+					<div class="get_directions_button_inner">
 				
-					<span>Directions</span>
+						<span>Directions</span>
 				
-					<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+					
+					</div><!-- get_directions_button_inner -->
 				
 				</a><!-- get_directions_button -->
 				

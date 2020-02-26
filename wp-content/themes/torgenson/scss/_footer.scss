@@ -89,21 +89,27 @@ footer {
 		}
 	}
 	.gform_footer {
-		width:277px;
-		height:85px;
-		margin:45px auto 0;
-		border-radius: 45px;
-		position: relative;
-		background: rgba(255,255,255, 0.2);
-		cursor: pointer;
-		&:hover {
+		//width:277px;
+		
+			.my_submit_inner {
+				&:hover {
 			&:after {
 				opacity: 1;
 			}
 			input[type="submit"] {
 				color:$red;
 			}
+			}
 	}
+	.my_submit_inner {
+		height:85px;
+		margin:45px auto 0;
+		border-radius: 45px;
+		position: relative;
+		background: rgba(255,255,255, 0.2);
+		cursor: pointer;
+		display: inline-block;
+		padding:0 45px;
 		&:before, &:after {
 			content:"";
 			display: block;
@@ -124,6 +130,8 @@ footer {
 			z-index:2;
 			transition: all 300ms ease-in-out;
 		}
+	}
+		
 		input[type="submit"] {
 			width:100%;
 			height:100%;
@@ -271,15 +279,13 @@ footer {
 a.get_directions_button {
 	margin-top:55px;
 	color:#fff;
-	width:198px;
+	//width:198px;
 	border:2px solid #fff;
 	display: inline-block;
 	border-radius: 45px;
 	text-decoration: none;
 	height:48px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding:0 21px;
 	transition: all 300ms ease-in-out;
 	@include sans_black;
 	&:hover {
@@ -288,6 +294,12 @@ a.get_directions_button {
 		svg {
 			transform: translateX(5px) rotate(180deg);
 		}
+	}
+	.get_directions_button_inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
 	}
 	span {
 		text-transform: uppercase;
@@ -428,9 +440,12 @@ a.get_directions_button {
 			}
 		}
 		.gform_footer {
-			height:74px;
-			width:232px;
-			margin: 41px auto 0;
+			
+			.my_submit_inner {
+				height:74px;
+				padding: 0 40px;
+				margin: 41px auto 0;
+			}
 			input[type="submit"] {
 				font-size: 16px;
 			}
@@ -507,8 +522,12 @@ a.get_directions_button {
 			}
 		}
 		.gform_footer {
-			margin: 33px auto 0;
-			width:273px;
+			
+			//width:273px;
+			.my_submit_inner {
+				margin: 33px auto 0;
+				padding: 0 50px;
+			}
 			input[type="submit"] {
 				font-size: 18px;
 			}
@@ -602,7 +621,9 @@ a.get_directions_button {
 			}
 		}
 		.gform_footer {
-			margin: 57px auto 0;
+			.my_submit_inner {
+				margin: 57px auto 0;
+			}
 			input[type="submit"] {
 				
 			}

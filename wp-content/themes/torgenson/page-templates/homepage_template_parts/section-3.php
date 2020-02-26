@@ -10,9 +10,13 @@
 			
 			<a class="sec_three_button desktop" href="<?php the_field( 'section_three_view_all_results_link' ); ?>">
 				
-				<span>View All Results</span>
+				<div class="sec_three_button_inner">
 				
-				<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+					<span>View All Results</span>
+				
+					<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+				
+				</div><!-- sec_three_button_inner -->
 				
 			</a><!-- sec_three_button -->
 			
@@ -81,9 +85,13 @@
 		
 		<a class="sec_three_button mobile" href="<?php the_field( 'section_three_view_all_results_link' ); ?>">
 				
-			<span>View All Results</span>
+			<div class="sec_three_button_inner">
 				
-			<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+					<span>View All Results</span>
+				
+					<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+				
+				</div><!-- sec_three_button_inner -->
 				
 		</a><!-- sec_three_button -->
 		
