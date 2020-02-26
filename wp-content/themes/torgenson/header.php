@@ -75,13 +75,13 @@
 				<div class="close"></div><!-- close -->
 				
 				
-				<?php if(get_field('spanish_header_and_footer')) : ?>
+				<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
 				
-				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'spanish_menu' ) ); ?>
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'spanish_menu' ) ); ?>
 				
 				<?php else:?>
 				
-				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 				
 				<?php endif;?>
 			
@@ -89,13 +89,13 @@
 			
 			<div class="free_consultation">
 				
-				<?php if(!get_field('spanish_header_and_footer')) : ?>
+				<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
 				
-					<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
+					<span class="free_consult_title"><?php the_field( 'spanish_free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
 				
 				<?php else:?>
 				
-					<span class="free_consult_title"><?php the_field( 'spanish_free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
+					<span class="free_consult_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
 				
 				<?php endif; ?>
 				
