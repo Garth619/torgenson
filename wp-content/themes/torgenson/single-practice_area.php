@@ -8,11 +8,20 @@
 		
 		<div class="page_inner_container">
 			
-			<?php get_sidebar(); ?>
+			<div class="sidebar_wrapper">
+	
+				<div class="sidebar">
+					
+						<?php dynamic_sidebar( 'spanish_sidebar' ); ?>
+		
+				</div><!-- sidebar -->
+	
+			</div><!-- sidebar_wrapper -->
 			
 			<div class="page_content content">
 				
-				<?php if(get_field('turn_banner_title_into_h1') == "Yes") : ?>
+				
+				<?php if(get_field('spanish_turn_banner_title_into_h1') == "Yes") : ?>
 				
 				<h2 class="page_header"><?php the_title();?></h2>
 				

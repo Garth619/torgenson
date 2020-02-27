@@ -86,15 +86,13 @@ span.contact_office_title {
 a.contact_button {
 	margin:29px auto 0;
 	color:#fff;
-	width:198px;
+	//width:198px;
 	border:2px solid #fff;
 	display: inline-block;
 	border-radius: 45px;
 	text-decoration: none;
 	height:45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	
 	transition: all 300ms ease-in-out;
 	@include sans_black;
 	&:hover {
@@ -103,6 +101,13 @@ a.contact_button {
 		svg {
 			transform: translateX(5px) rotate(180deg);
 		}
+	}
+	.contact_button_inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		padding:0 21px;
 	}
 	span {
 		text-transform: uppercase;

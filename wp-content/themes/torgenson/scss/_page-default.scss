@@ -30,6 +30,7 @@
 	}
 	.banner_title {
 		color:#fff;
+		text-align: center;
 		font-size: 60px;
 		line-height: 70px;
 		margin-top: 20px;
@@ -61,7 +62,7 @@ img.banner_image {
 
 
 a.banner_button {
-	width:395px;
+	//width:395px;
 	display: block;
 	background: rgba(255,255,255, 0.2);
 	text-align: center;
@@ -84,7 +85,7 @@ a.banner_button {
 		font-size:20px;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		padding:25px 0;
+		padding:25px 29px;
 		transition: all 200ms ease-in-out;
 		color:#fff;
 		@include sans_bold;
