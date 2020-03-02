@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Video Center */
+/* Template Name: Video Center
+
+Template Post Type: page, espanol */
 
 get_header(); ?>
 

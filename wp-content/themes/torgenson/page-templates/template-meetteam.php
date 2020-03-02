@@ -1,6 +1,10 @@
 <?php 
 
-/* Template Name: Attorney Directory */
+/* Template Name: Attorney Directory 
+	
+Template Post Type: page, espanol */
+	
+
 
 get_header(); ?>
 

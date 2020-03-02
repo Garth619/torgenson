@@ -75,7 +75,7 @@
 				<div class="close"></div><!-- close -->
 				
 				
-				<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
+				<?php if(get_field('spanish_header_and_footer') || is_singular('espanol') ) : ?>
 				
 					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'spanish_menu' ) ); ?>
 				
@@ -89,7 +89,7 @@
 			
 			<div class="free_consultation">
 				
-				<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
+				<?php if(get_field('spanish_header_and_footer') || is_singular('espanol') ) : ?>
 				
 					<span class="free_consult_title"><?php the_field( 'spanish_free_consultation_verbiage','option'); ?></span><!-- free_consult_title -->
 				

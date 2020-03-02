@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Case Results */
+/* Template Name: Case Results 
+
+Template Post Type: page, espanol */
 
 get_header(); ?>
 

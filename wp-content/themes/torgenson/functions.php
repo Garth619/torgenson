@@ -234,7 +234,7 @@ if (function_exists('register_sidebars')) {
     
     
     register_sidebar(array(
-        'name' => 'Spanish Practice Areas',
+        'name' => 'Spanish Sidebar Practice Areas',
         'id' => 'spanish_sidebar',
         'description' => '',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',

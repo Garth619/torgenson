@@ -1,6 +1,8 @@
 <?php
 	
-	/* Template Name: Contact */
+	/* Template Name: Contact
+	
+	Template Post Type: page, espanol */
 	
 	get_header(); ?>
 
@@ -16,9 +18,8 @@
 			
 			<div class="contact_top_content">
 				
-				<?php if(get_field('spanish_header_and_footer')) : ?>
+				<?php if(get_field('spanish_header_and_footer') || is_singular('espanol')) : ?>
 	
-					
 					<div class="contact_locations">
 					
 					<div class="contact_location_col">
@@ -29,9 +30,13 @@
 						
 						<a class="contact_button" href="<?php the_field('spanish_google_map_link','option'); ?>">
 							
-							<span><?php the_field( 'spanish_directions_verbiage','option'); ?></span>
+							<div class="contact_button_inner">
 							
-							<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+								<span><?php the_field( 'spanish_directions_verbiage','option'); ?></span>
+							
+								<?php echo file_get_contents("wp-content/themes/torgenson/images/arrow.svg"); ?>
+							
+							</div><!-- contact_button_inner -->
 							
 						</a><!-- contact_button -->
 						

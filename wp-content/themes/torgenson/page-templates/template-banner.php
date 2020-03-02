@@ -2,7 +2,7 @@
 		
 		<div class="internal_banner_content">
 			
-			<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
+			<?php if(get_field('spanish_header_and_footer') || is_singular('espanol') ) : ?>
 			
 			
 				<?php if(get_field('spanish_internal_banner_subtitle')) : ?>
@@ -88,7 +88,15 @@
 			
 				<a class="banner_button" href="#consultation">
 					
-					<span><?php the_field( 'banner_button_verbiage','option'); ?></span>
+					<?php if(get_field('spanish_header_and_footer') || is_singular('espanol') ) : ?>
+					
+						<span><?php the_field( 'spanish_banner_button_verbiage','option'); ?></span>
+					
+					<?php else:?>
+					
+						<span><?php the_field( 'banner_button_verbiage','option'); ?></span>
+					
+					<?php endif;?>
 				
 				</a><!-- banner_button -->
 			
@@ -105,7 +113,7 @@
 		<?php $spanish_internal_banner_image = get_field( 'spanish_internal_banner_image' ); ?>
 
 
-		<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area') ) : ?>
+		<?php if(get_field('spanish_header_and_footer') || is_singular('espanol') ) : ?>
 		
 		
 			<?php if ( $spanish_internal_banner_image ) : ?>

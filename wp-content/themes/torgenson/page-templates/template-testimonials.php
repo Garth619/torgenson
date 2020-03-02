@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Testimonials */
+/* Template Name: Testimonials
+
+Template Post Type: page, espanol */
 
 get_header(); ?>
 

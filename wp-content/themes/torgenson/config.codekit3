@@ -61,6 +61,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/archive-faq.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive-faq.php",
+		"oF": 0
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1040,6 +1048,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/_page-faq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-faq.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_page-meetteam.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1233,12 +1254,12 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
-	"/single-practice_area.php": {
+	"/single-espanol.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/single-practice_area.php",
+		"oAP": "/single-espanol.php",
 		"oF": 0
 		},
 	"/single.php": {

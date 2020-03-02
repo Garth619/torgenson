@@ -1,4 +1,4 @@
-<?php if(get_field('spanish_header_and_footer') || is_singular('practice_area')) : ?>
+<?php if(get_field('spanish_header_and_footer') || is_singular('espanol')) : ?>
 
 	<footer id="footer_trigger">
 	
@@ -18,7 +18,7 @@
 		
 	</div><!-- form_wrapper -->
 	
-	<?php if(!is_page_template('page-templates/template-contact.php')) {?>
+	<?php if(!is_page_template('page-templates/template-contact.php') || !is_singular('espanol')) {?>
 	
 	<div class="location_info">
 		
