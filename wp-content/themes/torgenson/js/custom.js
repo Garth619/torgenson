@@ -456,6 +456,17 @@ var pgurl = window.location.href;
 		$(this).toggleClass('active');
 	
 	});
+	
+	
+	// faq
+	
+	
+	$('span.question').on('click', function(e) {
+		
+		$(this).next('.answer').slideToggle(300);
+		$(this).prev('.drop_arrow').toggleClass('open');
+	  
+	});
 
 
 	// nav

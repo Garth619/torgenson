@@ -78,6 +78,7 @@ footer {
 				letter-spacing: 0.05em;
 				border-radius:5px;
 				padding:18px 20px;
+				-webkit-appearance: none;
 				@include sans_reg;
 			}
 			textarea {

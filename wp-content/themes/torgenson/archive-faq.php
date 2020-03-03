@@ -10,38 +10,72 @@
 		
 		<div class="faq_wrapper">
 			
-			<?php $custom_terms = get_terms('faq_type');
+			<?php $custom_terms = get_terms('faq_type', array('slug' => array('general')));
 
 				foreach($custom_terms as $custom_term) {
-				wp_reset_query();
-				$args = array('post_type' => 'faq',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'faq_type',
-                'field' => 'slug',
-                'terms' => $custom_term->slug,
-            ),
-        ),
-     );
-
-     $loop = new WP_Query($args);
-     if($loop->have_posts()) {
+					
+					$args = array('post_type' => 'faq');
+					
+					$loop = new WP_Query($args);
+     
+					if($loop->have_posts()) {
         
-        echo '<div class="faq_type_wrapper"><span class="faq_type">'.$custom_term->name.'</span></div>';
+						echo '<div class="faq_type_wrapper"><span class="faq_type">'.$custom_term->name.'</span>';
 
-        while($loop->have_posts()) : $loop->the_post(); ?>
+						while($loop->have_posts()) : $loop->the_post(); ?>
            
-           
-           <div class="question_wrapper">
+						<div class="question_wrapper">
 	           
+	           <span class="drop_arrow"></span>
 	           <span class="question"><?php the_title();?></span>
-	           <span class="drop_arrow"></span><!-- drop_arrow -->
 	           <div class="answer content"><?php the_content();?></div>
 	           
            </div><!-- question_wrapper -->
            
         
-        <?php endwhile;
+        <?php endwhile; echo '</div>';
+	        
+	       }
+			
+			} ?>
+			
+			
+			
+			
+			<?php $custom_terms_two = get_terms('faq_type', array('exclude' => array( 8 ))); // exclude general
+
+				foreach($custom_terms_two as $custom_term_two) {
+				wp_reset_query();
+				$args_two = array(
+				'post_type' => 'faq',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'faq_type',
+                'field' => 'slug',
+                'terms' => $custom_term_two->slug,
+            ),
+        ),
+     );
+
+     $loop_two = new WP_Query($args_two);
+     
+     if($loop_two->have_posts()) {
+        
+        echo '<div class="faq_type_wrapper"><span class="faq_type">'.$custom_term_two->name.'</span>';
+
+        while($loop_two->have_posts()) : $loop_two->the_post(); ?>
+           
+           
+           <div class="question_wrapper">
+	           
+	           <span class="drop_arrow"></span>
+	           <span class="question"><?php the_title();?></span>
+	           <div class="answer content"><?php the_content();?></div>
+	           
+           </div><!-- question_wrapper -->
+           
+        
+        <?php endwhile; echo '</div>';
      }
 			
 			} ?>
