@@ -461,10 +461,10 @@ var pgurl = window.location.href;
 	// faq
 	
 	
-	$('span.question').on('click', function(e) {
+	$('.question_wrapper').on('click', function(e) {
 		
-		$(this).next('.answer').slideToggle(300);
-		$(this).prev('.drop_arrow').toggleClass('open');
+		$(this).find('.answer').slideToggle(300);
+		$(this).find('.drop_arrow').toggleClass('open');
 	  
 	});
 
